@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start"
+  },
+  "dependencies": {
+    "embla-carousel-auto-height": "^8.0.0",
+    "embla-carousel-react": "^8.0.0",
+    "next": "latest",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-responsive-carousel": "^3.2.23"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.20",
+    "@types/react": "18.2.60",
+    "typescript": "5.3.3"
+  }
+}
