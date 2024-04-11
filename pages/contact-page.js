@@ -1,9 +1,10 @@
 import Head from 'next/head';
-import styles from '../styles/styles.module.css';
+import styles from '../styles/contact.module.css';
 import Image from 'next/image';
 import Link from "next/link";
 import Logo from '../images/icons/Logo.png';
 import Greetings from "../images/blog-images/Intro.png";
+import ContactForm from "../src/components/global/ContactForm";
 import Instagram from '../images/icons/Instagram_Icon.svg';
 import X from '../images/icons/Twitter_Icon.svg';
 import Youtube from '../images/icons/Youtube_Icon.svg';
@@ -82,6 +83,10 @@ export default function Home() {
 
                             </div>
                             <div className={styles.contact_container}>
+
+                                <ContactForm />
+
+
                                 {/* <form action="action_page.php">
 
                                     <label for="name">Your Name</label>
