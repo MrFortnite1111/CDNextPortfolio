@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import Head from 'next/head';
 import styles from '../styles/styles.module.css';
 import Image from 'next/image';
@@ -9,9 +10,81 @@ import FlourishingTwilightCover from '../images/comic-covers/flourishing-twiligh
 import Instagram from '../images/icons/Instagram_Icon.svg';
 import X from '../images/icons/Twitter_Icon.svg';
 import Youtube from '../images/icons/Youtube_Icon.svg';
+import {gsap} from "gsap";
+import { useGSAP } from '@gsap/react';
+import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
 
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
+    const mainRef = useRef();
+    const imageRefs = useRef([]);
+    const titleRefs = useRef([]);
+    const paraRefs = useRef([]);
+    const actionRefs = useRef([]);
+
+    const setRef = (ref, element) => {
+        ref.current.push(element);
+    }
+
+    useGSAP(
+        () => {
+            imageRefs?.current?.forEach((img) => {
+                gsap.from(img, {
+                    x: -500,
+                    opacity: 0,
+                    scrollTrigger: {
+                      trigger: img,
+                      start: 'top bottom',
+                      end: 'top 70%',
+                      scrub: true,
+                    },
+                  });
+            })
+
+            titleRefs?.current?.forEach((title) => {
+                gsap.from(title, {
+                    y: -100,
+                    opacity: 0,
+                    scrollTrigger: {
+                      trigger: title,
+                      start: 'top bottom',
+                      end: 'top 70%',
+                      scrub: true,
+                    },
+                  });
+            });
+
+            paraRefs?.current?.forEach((para) => {
+                gsap.from(para, {
+                    x: 200,
+                    opacity: 0,
+                    scrollTrigger: {
+                      trigger: para,
+                      start: 'top bottom',
+                      end: 'top 70%',
+                      scrub: true,
+                    },
+                  });
+            });
+
+            actionRefs?.current?.forEach((action) => {
+                gsap.from(action, {
+                    y: 100,
+                    opacity: 0,
+                    scrollTrigger: {
+                      trigger: action,
+                      start: 'top bottom',
+                      end: 'top 80%',
+                      scrub: true,
+                    },
+                  });
+            })
+            
+        },
+        { scope: mainRef }
+      );
+
     return (
         <div className={styles.container}>
             <Head>
@@ -19,7 +92,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main className={styles.body}>
+            <main ref={mainRef} className={styles.body}>
                 <div className={styles.container}>
                     <header className={styles.header_container}>
                         <div className={styles.header}>
@@ -89,6 +162,7 @@ export default function Home() {
                     <div className={styles.section_2}>
                         <div className={styles.section_2_image}>
                             <Image
+                                ref={(e) => setRef(imageRefs, e)}
                                 className={styles.img}
                                 src={BygoneLandsCover.src}
                                 width={1800}
@@ -98,19 +172,19 @@ export default function Home() {
                         </div>
 
                         <div className={styles.section_2_description}>
-                            <h3 className={styles.h3}>Bygone Lands</h3>
+                            <h3 className={styles.h3} ref={(e) => setRef(titleRefs, e)}>Bygone Lands</h3>
                             <hr className={styles.hr} />
-                            <p className={styles.p}>
+                            <p className={styles.p} ref={(e) => setRef(paraRefs, e)}>
                                 Bygone lands is a passion project of mine that has been in the works for a while now.
                                 It is a graphic novel series that tells of a story of discovery and fantasy.
                             </p>
-                            <p className={styles.p}>
+                            <p className={styles.p} ref={(e) => setRef(paraRefs, e)}>
                                 It begins with a couple of students learning about myths and stories of an ancient and secret world.
                                 With this information, they find and reenact the process to open the portal again.
                                 However, they instead got dragged into an abandoned world of ruins and must uncover the
                                 secrets of this otherworldly land.
                             </p>
-                            <div className={styles.button_container}>
+                            <div className={styles.button_container} ref={(e) => setRef(actionRefs, e)}>
                                 <a className={styles.button} href="comic-page.html#paper-adventures">More Info</a>
                             </div>
                         </div>
@@ -119,6 +193,7 @@ export default function Home() {
                     <div className={styles.section_2}>
                         <div className={styles.section_2_image}>
                             <Image
+                                ref={(e) => setRef(imageRefs, e)}
                                 className={styles.img}
                                 src={FlourishingTwilightCover.src}
                                 width={1500}
@@ -128,15 +203,15 @@ export default function Home() {
                         </div>
 
                         <div className={styles.section_2_description}>
-                            <h3 className={styles.h3}>Flourishing Twilight</h3>
+                            <h3 className={styles.h3} ref={(e) => setRef(titleRefs, e)}>Flourishing Twilight</h3>
                             <hr className={styles.hr} />
-                            <p className={styles.p}>
+                            <p className={styles.p} ref={(e) => setRef(paraRefs, e)}>
                                 A couple of instructors take their days off at a lovely beach, until they discovered something
                                 otherworldly arise from the ocean! Join these three travelers on their journey towards the
                                 Twilight
                                 Zone as they learn about the inhabitants and the environment!
                             </p>
-                            <div className={styles.button_container}>
+                            <div className={styles.button_container} ref={(e) => setRef(actionRefs, e)}>
                                 <a className={styles.button} href="comic-page.html#flourishing-twilight">More Info</a>
                             </div>
                         </div>
