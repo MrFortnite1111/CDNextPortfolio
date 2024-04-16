@@ -1,21 +1,21 @@
 "use client"
-import React from "react";
+import { useState } from "react";
 import styles from "../../../styles/contact.module.css";
-import { Box, Button, TextField, TextareaAutosize } from "@mui/material";
+import { Alert, Box, Button, TextField, TextareaAutosize } from "@mui/material";
 
 
 const ContactForm = () => {
-    const defaultSubmission =
-
-    const [submission, setSubmission] = useState({
+    const defaultSubmission = {
         status: null,
         message: null,
-    });
+    }
+
+    const [submission, setSubmission] = useState(defaultSubmission);
 
     const handleSubmit = async (e: any) => {
         e.preventDefault();
-        const formData: { [key: string]: string } = {};
-        const elements = formData.currentTarget.elements as unknown as Array<
+        const formData: any = {};
+        const elements = e.currentTarget.elements as unknown as Array<
             HTMLInputElement | HTMLTextAreaElement | HTMLButtonElement
         >;
 
@@ -23,17 +23,15 @@ const ContactForm = () => {
             if (!field.name) return;
             formData[field.name] = field.value;
         });
-        console.log(formData)
-        // let object: any = {};
-        // formData.forEach((value: string, key: string) => object[key] = value);
+        console.log(formData);
         await fetch('/contact/send', {
             method: 'POST',
             body: JSON.stringify(formData),
         })
             .then((res) => res.json())
             .then((res) => {
-                console.log("MY SUPER AWESOME RESPONSE", res)
-                setSubmission
+                console.log("MY SUPER AWESOME RESPONSE", res);
+                setSubmission(res);
             });
     }
 

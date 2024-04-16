@@ -87,22 +87,6 @@ export default function Home() {
                                 <ContactForm />
 
 
-                                {/* <form action="action_page.php">
-
-                                    <label for="name">Your Name</label>
-                                    <input type="text" id="name" name="fullname" placeholder="Your name.." />
-
-                                    <label for="email">Email</label>
-                                    <input type="text" id="email" name="email" placeholder="Your email.." />
-
-                                    <label for="subject">Message</label>
-                                    <textarea id="subject" name="subject" placeholder="Write something.."
-                                        style={{ height: '200px' }}></textarea>
-
-                                    <input type="submit" value="Submit" />
-
-                                </form> */}
-
                                 <div className={styles.section_2_image}>
                                     <Image
                                         className={styles.img}

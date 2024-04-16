@@ -1,7 +1,5 @@
-import { NextResponse } from "next/server";
-
-
 const nodemailer = require("nodemailer");
+import { NextResponse } from "next/server";
 
 const transporter = nodemailer.createTransport({
     host: process.env.NODEMAILER_HOST || "smtp.google.com",
@@ -19,15 +17,26 @@ type ResponseData = {
 };
 
 export async function POST(request: Request) {
-    const response: ResponseData = {};
-    const body = await request.json();
-    console.log("MY BODY", body);
-    const info = await transporter.sendMail({
-        from: body.email, // sender address
-        to: "cosmicdesigns979@gmail.com", // list of receivers
-        subject: `HMy Vercel Contact: $ {body.name}`, // Subject line
-        text: body.message, // plain text body
-        html: `<b>$(body.message)</b>`, // html body
-    });
-    return NextResponse.json(response);
+    try {
+        const body = await request.json();
+        console.log("BODY", body);
+        const info = await transporter.sendMail({
+            from: body.email, // sender address
+            to: "cosmicdesigns979@gmail.com", // list of receivers
+            subject: `My Vercel Contact: ${body.name}`, // Subject line
+            text: body.message, // plain text body
+            html: `<b>$(body.message)</b>`, // html body
+        });
+        return NextResponse.json({
+            status: "success",
+            message: "Thank you for contacting me, I will response ASAP."
+        });
+    } catch (error) {
+        console.log(error);
+        return NextResponse.json({
+            status: "error",
+            message: "Oops, something went wrong."
+        });
+
+    }
 }

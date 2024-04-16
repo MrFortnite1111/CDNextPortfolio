@@ -24,12 +24,13 @@
     font-weight: 500;
     padding: 150px;
     margin: 0%;
+    color: white;
 }
 
 .banner {
     height: 400px;
     width: 100%;
-    background-image: url(../Images/Banner-Images/Banner.jpg);
+    background-image: url(../Images/Banner-Images/comic-panel.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -206,41 +207,6 @@
 }
 
 
-/* image gallery */
-
-
-/* Position the image container (needed to position the left and right arrows) */
-.gallery_container {
-    box-sizing: border-box;
-    position: relative;
-    margin: 100px 300px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7)
-}
-
-/* Embla Buttons Positioning */
-
-.embla__controls {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    margin-bottom: 20px;
-}
-
-/* Embla Button Styling */
-
-.embla__button {
-    background-color: aqua;
-}
-
-/* Image Size for Galleries */
-
-.gallery_img {
-    max-width: 100%;
-}
-
 /* main styles */
 .section_1 {
     background-color: #161033;
@@ -291,6 +257,9 @@
 .h2 {
     font-size: 40px;
     text-transform: uppercase;
+    color: #E9B820;
+    margin: 0%;
+    padding: .3em;
 }
 
 .h3 {
@@ -298,7 +267,6 @@
 }
 
 .h2,
-.h3,
 .p {
     color: white;
     text-align: center;
