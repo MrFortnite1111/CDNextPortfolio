@@ -258,6 +258,7 @@
     font-size: 40px;
     text-transform: uppercase;
     color: #E9B820;
+    text-align: center;
     margin: 0%;
     padding: .3em;
 }
@@ -266,7 +267,7 @@
     font-size: 20px;
 }
 
-.h2,
+.h3,
 .p {
     color: white;
     text-align: center;

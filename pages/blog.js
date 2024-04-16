@@ -3,16 +3,18 @@ import styles from '../styles/blog.module.css';
 import Image from 'next/image';
 import Link from "next/link";
 import Logo from '../images/icons/Logo.png';
-// import ToDoVanillaJS from '../images/blog-images'
-// import VanillaJSCode from
-// import ToDoNextJS from
-// import ReactJSCode from
-// import Puqween1 from
-// import Puqween2 from
-// import Puqween3 from
-// import Meatball from
-// import DivinePower from
-// import DivPowSketch from
+import BLSketch from '../images/blog-images/bygone-lands-sketch.jpg';
+import BLCover from '../images/blog-images/bygone-lands-cover.jpg';
+import BLAnnoucement from '../images/blog-images/bygone-lands-annoucement.jpg';
+import ToDoVanillaJS from '../images/blog-images/vanilla-todo.png';
+import VanillaJSCode from '../images/blog-images/vanilla-code.png';
+import ToDoReactJS from '../images/blog-images/reactjs-todo.png';
+import ReactJSCode from '../images/blog-images/reactjs-code.png';
+import Puqween1 from '../images/blog-images/puqween-1.png';
+import Puqween2 from '../images/blog-images/puqween-2.png';
+import Puqween3 from '../images/blog-images/puqween-3.png';
+import Meatball from '../images/blog-images/meatball.png';
+import DivinePower from '../images/blog-images/divine-power.png';
 import Instagram from '../images/icons/Instagram_Icon.svg';
 import X from '../images/icons/Twitter_Icon.svg';
 import Youtube from '../images/icons/Youtube_Icon.svg';
@@ -78,19 +80,143 @@ export default function Home() {
                     </header>
 
                     <div className={styles.blog_section}>
+
                         <div className={styles.blog_post}>
                             <div className={styles.blog_header}>
-                                <h3 className={styles.h3}>My Experience with Vanilla JS and React JS</h3>
-                                <p className={styles.p}><time datetime="2024-03-12">03/12/23</time></p>
+                                <h3 className={styles.h3}>Brave the Unknown: Bygone Lands</h3>
+                                <p className={styles.p}><time datetime="2023-11-17">3/17/24</time></p>
                             </div>
                             <div className={styles.blog_info}>
                                 <div className={styles.blog_img}>
-                                    <img src="Images/Blog-Images/Vanilla-To-Do.png" alt="To Do App made with Vanilla JS"
-                                        width="300px" />
-                                    <img src="Images/Blog-Images/Vanilla-JS-Code.png" alt="Vanilla JS Code" width="300px" />
-                                    <img src="Images/Blog-Images/React-To-Do.png" alt="To Do App made with React JS"
-                                        width="300px" />
-                                    <img src="Images/Blog-Images/React-JS-Code.png" alt="React JS Code" width="300px" />
+                                    <Image
+                                        className={styles.img}
+                                        src={BLSketch.src}
+                                        width={2100}
+                                        height={2800}
+                                        alt="Bygone Lands Sketch"
+                                    />
+                                    <Image
+                                        className={styles.img}
+                                        src={BLCover.src}
+                                        width={2100}
+                                        height={2800}
+                                        alt="Bygone Lands Cover"
+                                    />
+                                    <Image
+                                        className={styles.img}
+                                        src={BLAnnoucement.src}
+                                        width={2100}
+                                        height={2100}
+                                        alt="Bygone Lands Annoucement"
+                                    />
+                                </div>
+                                <div className={styles.blog_description}>
+                                    <p className={styles.p}>
+                                        Howdy folks, and welcome back to my art blog. Today's post is all about going into the
+                                        little details in crafting my recent artwork for my graphic novel,
+                                        <a target="_blank" href="comic-page.html#paper-adventures">“Bygone Lands.”</a> This
+                                        novel has been in the works for 6 years (Man, time flies by!) and I'm super excited to
+                                        finally be able to finish it this Fall after all this time. Anyways, one must wonder how I
+                                        made this pleasant little cover, and I'll tell you just that!
+                                    </p>
+                                    <h4 className={styles.h4}>
+                                        What's Bygone Lands all about?
+                                    </h4>
+                                    <p className={styles.p}>
+                                        This story is all about exploration, as our protagonists hear about the legends of a world
+                                        filled to the brim with imaginations that span into infinity, beginning their adventures
+                                        into an old and forgotten civilization. Once I had a good description of my story, I started
+                                        thinking about how I wanted to present it to my audience cohesively. It needs to be
+                                        gripping, enticing, and initiating curiosity in reading such a mysterious novel.
+                                    </p>
+                                    <h4 className={styles.h4}>
+                                        Ideas to Cover
+                                    </h4>
+                                    <p className={styles.p}>
+                                        Moving to the second step, I had to find out how I could compact all of that into one
+                                        presentable cover. I sifted through the page sketches of my graphic novel, finding the
+                                        “moment” that I want to represent as my graphic novel cover. Soon, I landed on said moment,
+                                        which is when the protagonists are swept away to a forgotten civilization. Traveling through
+                                        this mysterious portal, streaks of light fly around the air and the skies of both worlds
+                                        seep into the portal stream. It was such a fun and miraculous way to describe and picture in
+                                        my head that I had to sketch out that moment!
+                                    </p>
+                                    <p className={styles.p}>
+                                        This is where the fun begins! I started sketching out some thumbnails for the cover and
+                                        eventually moved to the big sketch with my perfect thumbnail. It was originally going to be
+                                        the protagonists floating in the portal stream with the rifts opening up, but I thought the
+                                        sketch was still too empty. Then, my gears started turning, thinking about the details of
+                                        world building as a whole! Eventually, I added sky lanterns into the mix of illustrations,
+                                        as a means of representing the festival's culture in the novel with wishes sent to the other
+                                        side to become a reality.
+                                    </p>
+                                    <h4 className={styles.h4}>
+                                        Time for Illustrating!!
+                                    </h4>
+                                    <p className={styles.p}>
+                                        With my sketch completed, I began to work on Procreate where I ink and color in the artwork.
+                                        Getting used to the software and using each stroke elegantly, this was an art piece I had
+                                        the most fun in while challenging myself critically in making choices in this artwork.
+                                    </p>
+                                    <p className={styles.p}>
+                                        The biggest challenges were drawing the building structures in the portal rifts and
+                                        balancing my contrast of colors. I'm not all that proficient in drawing buildings, but this
+                                        artwork is giving me a push into diving into that category, along with strengthening my
+                                        color choices. Regardless of these challenges, the aspects that I had the most fun with
+                                        outshine my struggles, with parts such as the unity of the elements in the cover art and the
+                                        entire spectacle of the finished product.
+                                    </p>
+                                    <p className={styles.p}>
+                                        In short, this cover has seen many renditions and hard challenges in the process, but the
+                                        overall result is so satisfying to see and compare to my previous covers! I'm still very
+                                        excited about the progress I've made on my graphic novel after all these years and am
+                                        looking forward to wrapping it all up!
+                                    </p>
+                                    <p className={styles.p}>
+                                        If you're interested in learning more about “Bygone Lands,” feel free to check out my
+                                        <a target="_blank" href="https://www.instagram.com/starro_art_/"> Instagram</a> or my
+                                        <a target="_blank" href="https://twitter.com/starro_art_"> Twitter</a> to catch up on
+                                        updates of my graphic novel!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={styles.blog_post}>
+                            <div className={styles.blog_header}>
+                                <h3 className={styles.h3}>My Experience with Vanilla JS and React JS</h3>
+                                <p className={styles.p}><time datetime="2024-03-12">03/12/24</time></p>
+                            </div>
+                            <div className={styles.blog_info}>
+                                <div className={styles.blog_img}>
+                                    <Image
+                                        className={styles.img}
+                                        src={ToDoVanillaJS.src}
+                                        width={2100}
+                                        height={2100}
+                                        alt="To-Do App made with Vanilla JS"
+                                    />
+                                    <Image
+                                        className={styles.img}
+                                        src={VanillaJSCode.src}
+                                        width={2100}
+                                        height={2100}
+                                        alt="Vanilla JS Code"
+                                    />
+                                    <Image
+                                        className={styles.img}
+                                        src={ToDoReactJS.src}
+                                        width={2100}
+                                        height={2100}
+                                        alt="To-Do App made with React JS"
+                                    />
+                                    <Image
+                                        className={styles.img}
+                                        src={ReactJSCode.src}
+                                        width={2100}
+                                        height={2100}
+                                        alt="React JS Code"
+                                    />
                                 </div>
                                 <div className={styles.blog_description}>
                                     <p className={styles.p}>
@@ -150,9 +276,28 @@ export default function Home() {
                             </div>
                             <div className={styles.blog_info}>
                                 <div className={styles.blog_img}>
-                                    <img src="Images/Blog-Images/Puqween-1.png" alt="Puqween 1" width="300px" />
-                                    <img src="Images/Blog-Images/Puqween-2.png" alt="Puqween 2" width="300px" />
-                                    <img src="Images/Blog-Images/Puqween-3.png" alt="Puqween 3" width="300px" />
+                                    <Image
+                                        className={styles.img}
+                                        src={Puqween1.src}
+                                        width={1400}
+                                        height={2100}
+                                        alt="Puqween 1"
+                                    />
+                                    <Image
+                                        className={styles.img}
+                                        src={Puqween2.src}
+                                        width={1400}
+                                        height={2100}
+                                        alt="Puqween 2"
+                                    />
+                                    <Image
+                                        className={styles.img}
+                                        src={Puqween3.src}
+                                        width={1400}
+                                        height={2100}
+                                        alt="Puqween 3"
+                                    />
+
                                 </div>
                                 <div className={styles.blog_description}>
                                     <p className={styles.p}>
@@ -174,7 +319,13 @@ export default function Home() {
                             </div>
                             <div className={styles.blog_info}>
                                 <div className={styles.blog_img}>
-                                    <img src="Images/Blog-Images/Meatball.png" alt="Chef Meatball" width="300px" />
+                                    <Image
+                                        className={styles.img}
+                                        src={Meatball.src}
+                                        width={1500}
+                                        height={2200}
+                                        alt="Meatball"
+                                    />
                                 </div>
                                 <div className={styles.blog_description}>
                                     <p className={styles.p}>
@@ -206,7 +357,13 @@ export default function Home() {
                             </div>
                             <div className={styles.blog_info}>
                                 <div className={styles.blog_img}>
-                                    <img src="Images/Blog-Images/Divine Power.png" alt="Divine Power" width="300px" />
+                                    <Image
+                                        className={styles.img}
+                                        src={DivinePower.src}
+                                        width={1000}
+                                        height={1700}
+                                        alt="Divine Power"
+                                    />
                                 </div>
                                 <div className={styles.blog_description}>
                                     <p className={styles.p}>
@@ -225,38 +382,10 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className={styles.blog_post}>
-                            <div className={styles.blog_header}>
-                                <h3 className={styles.h3}>Progress Log 1: "Divine Power!"</h3>
-                                <p className={styles.p}><time datetime="2023-09-12">9/12/23</time></p>
-                            </div>
-                            <div className={styles.blog_info}>
-                                <div className={styles.blog_img}>
-                                    <img src="Images/Blog-Images/Progress-Div-Pow.png" alt="Divine Power Rough Sketch"
-                                        width="300px" />
-                                </div>
-                                <div className={styles.blog_description}>
-                                    <p className={styles.p}>
-                                        Good day, folks! It's been a while, hasn't it? Most of my time has been going into
-                                        reworking on a design that has been in the shelves for a while now. Not much has
-                                        changed
-                                        this delightful warrior's heart, so it's time to give him one more introduction!
-                                    </p>
-                                    <p className={styles.p}>
-                                        Grazing the untamed lands and dirt roads, Harberd the Divine is a traveling paladin
-                                        who
-                                        seeks to share the holy word through glory of battle. Wielding his trusty halberd
-                                        and
-                                        his heart, painted with glossy gold, nothing can stop this warrior's boisterous
-                                        spirit!
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
 
                         <div className={styles.blognav}>
                             <ul>
-                                <li><a href="#" class="active">1</a></li>
+                                <li><Link href="#" className={styles.active}>1</Link></li>
                                 <li><Link href="./blog-2">2</Link></li>
                             </ul>
                         </div>
