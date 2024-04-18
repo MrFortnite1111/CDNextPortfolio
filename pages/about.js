@@ -3,8 +3,8 @@ import styles from '../styles/about.module.css';
 import Image from 'next/image';
 import Link from "next/link";
 import Logo from '../images/icons/Logo.png';
-import ATan from "../images/aboutme-images/aaron-tan.png"
-import ATanGallery from "../images/aboutme-images/aaron-exhibition.jpg"
+import ATan from "../images/aboutme-images/aaron-tan.png";
+import ATanGallery from "../images/aboutme-images/aaron-exhibition.jpg";
 import Instagram from '../images/icons/Instagram_Icon.svg';
 import X from '../images/icons/Twitter_Icon.svg';
 import Youtube from '../images/icons/Youtube_Icon.svg';

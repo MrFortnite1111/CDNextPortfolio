@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react";
 import styles from "../../../styles/contact.module.css";
-import { Alert, Box, Button, TextField, TextareaAutosize } from "@mui/material";
+import { Alert, Box, Button, TextField, TextareaAutosize, styled, } from "@mui/material";
 
 
 const ContactForm = () => {
@@ -45,18 +45,44 @@ const ContactForm = () => {
 
             <form className={styles.contactform} onSubmit={handleSubmit}>
                 <Box sx={{ pb: { xs: 1, md: 1 } }}>
-                    <TextField name="name" id="name-basic" label="Name" variant="outlined" type="text" />
+                    <StyledTextField name="name" id="name-basic" label="Name" variant="outlined" type="text" />
                 </Box>
                 <Box sx={{ pb: { xs: 1, md: 1 } }}>
-                    <TextField name="email" id="email-basic" label="Email" variant="outlined" type="email" />
+                    <StyledTextField name="email" id="email-basic" label="Email" variant="outlined" type="email" />
                 </Box>
                 <Box sx={{ pb: { xs: 1, md: 1 } }}>
-                    <TextareaAutosize name="message" id="message" placeholder="Write your message here!" />
+                    <StyledTextArea name="message" id="message" placeholder="Write your message here!" minRows={6} />
                 </Box>
-                <Button type="submit" variant="contained">Submit</Button>
+                <StyledButton type="submit" variant="contained">Submit</StyledButton>
             </form>
         </div>
     );
 }
 
 export default ContactForm;
+
+const StyledTextField = styled(TextField)`
+    width: 350px;
+    color: white;
+    background-color: #e3d5f7;
+    border-radius: 5px;
+
+    field-set {
+        border-color: white;
+    }
+`
+const StyledTextArea = styled(TextareaAutosize)`
+    border-color: #161033;
+    background-color: #e3d5f7;
+    border-radius: 5px;
+    width: 350px;
+`
+
+const StyledButton = styled(Button)`
+    background-color: #E9B820;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    color: black;
+
+`

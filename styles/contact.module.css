@@ -272,6 +272,8 @@
 
 .img {
     padding: 0%;
+    width: 50%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -281,13 +283,14 @@
 .contactform {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: #483A7C;
     padding: 30px;
 }
 
-.button_container {
-    padding: 20px;
-    text-align: center;
+.p a {
+    color: #E9B820;
+    font-weight: 600;
 }
 
 a.button {
@@ -320,9 +323,29 @@ a.button:hover {
 
 .footer {
     background-color: #483A7C;
-    height: 70px;
+    height: auto;
     width: 100%;
 }
+
+.footer_text {
+    padding: 30px 90px 0px;
+}
+
+.footer_contact {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 60px;
+    width: 100%;
+}
+
+.footer_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
 
 .socialnav {
     list-style-type: none;

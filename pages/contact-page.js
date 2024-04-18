@@ -3,7 +3,7 @@ import styles from '../styles/contact.module.css';
 import Image from 'next/image';
 import Link from "next/link";
 import Logo from '../images/icons/Logo.png';
-import Greetings from "../images/blog-images/Intro.png";
+import Greetings from "../images/blog-images/intro.png";
 import ContactForm from "../src/components/global/ContactForm";
 import Instagram from '../images/icons/Instagram_Icon.svg';
 import X from '../images/icons/Twitter_Icon.svg';
@@ -64,7 +64,7 @@ export default function Home() {
                                 </ul>
                             </nav>
                         </div>
-                        <div class={styles.banner}>
+                        <div className={styles.banner}>
                             <p className={styles.h1}>CONTACT</p>
                         </div>
                     </header>
@@ -102,6 +102,33 @@ export default function Home() {
                     </div>
 
                     <footer className={styles.footer}>
+                        <div className={styles.footer_text}>
+                            <p className={styles.p}>
+                                If you have any questions about my work, commissions, and potential to buy my artwork,
+                                please contact me by filling out this form! Please and thank you!
+                            </p>
+                            <p className={styles.p}>
+                                If you wish to contact me directly or the form doesn't work, contact me
+                                through my <a href="mailto:atan8379@gmail.com">email</a> please!
+                            </p>
+                        </div>
+
+                        <div className={styles.footer_contact}>
+
+                            <ContactForm />
+
+                            <div className={styles.footer_image}>
+                                <Image
+
+                                    src={Greetings.src}
+                                    width={250}
+                                    height={250}
+                                    alt="Greeting Photo"
+                                />
+                            </div>
+
+                        </div>
+
                         <ul className={styles.socialnav}>
                             <li>
                                 <a href="https://www.instagram.com/starro_art_/">
