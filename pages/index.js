@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import Head from 'next/head';
 import styles from '../styles/styles.module.css';
 import Image from 'next/image';
