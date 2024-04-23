@@ -30,7 +30,7 @@
 .banner {
     height: 400px;
     width: 100%;
-    background-image: url(../Images/Banner-Images/comic-panel.jpg);
+    background-image: url(../images/banner-images/comic-panel.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

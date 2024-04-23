@@ -82,21 +82,6 @@ export default function Home() {
                                 </p>
 
                             </div>
-                            <div className={styles.contact_container}>
-
-                                <ContactForm />
-
-
-                                <div className={styles.section_2_image}>
-                                    <Image
-                                        className={styles.img}
-                                        src={Greetings.src}
-                                        width={300}
-                                        height={300}
-                                        alt="Greeting Photo"
-                                    />
-                                </div>
-                            </div>
                         </div>
 
                     </div>
@@ -109,7 +94,7 @@ export default function Home() {
                             </p>
                             <p className={styles.p}>
                                 If you wish to contact me directly or the form doesn't work, contact me
-                                through my <a href="mailto:atan8379@gmail.com">email</a> please!
+                                through my <a href="mailto:cosmicdesigns979@gmail.com">email</a> please!
                             </p>
                         </div>
 
