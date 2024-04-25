@@ -2,14 +2,14 @@ import Head from 'next/head';
 import styles from '../styles/blog.module.css';
 import Image from 'next/image';
 import Link from "next/link";
-import Logo from '../images/icons/Logo.png';
-import DivPowSketch from '../images/blog-images/progress-divinepower.png';
-import BeWitched from '../images/blog-images/bewitched.png';
-import WitchSketch from '../images/blog-images/progress-witch.png';
-import Intro from '../images/blog-images/intro.png';
-import Instagram from '../images/icons/Instagram_Icon.svg';
-import X from '../images/icons/Twitter_Icon.svg';
-import Youtube from '../images/icons/Youtube_Icon.svg';
+import Logo from '../src/assets/images/icons/Logo.png';
+import DivPowSketch from '../src/assets/images/blog-images/progress-divinepower.png';
+import BeWitched from '../src/assets/images/blog-images/bewitched.png';
+import WitchSketch from '../src/assets/images/blog-images/progress-witch.png';
+import Intro from '../src/assets/images/blog-images/intro.png';
+import Instagram from '../src/assets/images/icons/Instagram_Icon.svg';
+import X from '../src/assets/images/icons/Twitter_Icon.svg';
+import Youtube from '../src/assets/images/icons/Youtube_Icon.svg';
 
 
 export default function Home() {

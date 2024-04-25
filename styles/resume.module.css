@@ -30,7 +30,7 @@
 .banner {
     height: 400px;
     width: 100%;
-    background-image: url(../images/banner-images/void.jpg);
+    background-image: url(../src/assets/images/banner-images/void.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

@@ -6,8 +6,8 @@ import React, {
 } from 'react'
 import { EmblaCarouselType } from 'embla-carousel'
 import style from '../../styles/styles.module.css'
-import backwardarrow from "../../images/icons/carouselarrow_backward.svg";
-import forwardarrow from "../../images/icons/carouselarrow_forward.svg";
+import backwardarrow from "../../src/assets/images/icons/carouselarrow_backward.svg";
+import forwardarrow from "../../src/assets/images/icons/carouselarrow_forward.svg";
 import Image from "next/image";
 
 type UsePrevNextButtonsType = {

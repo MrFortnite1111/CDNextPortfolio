@@ -2,22 +2,22 @@ import Head from 'next/head';
 import styles from '../styles/blog.module.css';
 import Image from 'next/image';
 import Link from "next/link";
-import Logo from '../images/icons/Logo.png';
-import BLSketch from '../images/blog-images/bygone-lands-sketch.jpg';
-import BLCover from '../images/blog-images/bygone-lands-cover.jpg';
-import BLAnnoucement from '../images/blog-images/bygone-lands-annoucement.jpg';
-import ToDoVanillaJS from '../images/blog-images/vanilla-todo.png';
-import VanillaJSCode from '../images/blog-images/vanilla-code.png';
-import ToDoReactJS from '../images/blog-images/reactjs-todo.png';
-import ReactJSCode from '../images/blog-images/reactjs-code.png';
-import Puqween1 from '../images/blog-images/puqween-1.png';
-import Puqween2 from '../images/blog-images/puqween-2.png';
-import Puqween3 from '../images/blog-images/puqween-3.png';
-import Meatball from '../images/blog-images/meatball.png';
-import DivinePower from '../images/blog-images/divine-power.png';
-import Instagram from '../images/icons/Instagram_Icon.svg';
-import X from '../images/icons/Twitter_Icon.svg';
-import Youtube from '../images/icons/Youtube_Icon.svg';
+import Logo from '../src/assets/images/icons/Logo.png';
+import BLSketch from '../src/assets/images/blog-images/bygone-lands-sketch.jpg';
+import BLCover from '../src/assets/images/blog-images/bygone-lands-cover.jpg';
+import BLAnnoucement from '../src/assets/images/blog-images/bygone-lands-annoucement.jpg';
+import ToDoVanillaJS from '../src/assets/images/blog-images/vanilla-todo.png';
+import VanillaJSCode from '../src/assets/images/blog-images/vanilla-code.png';
+import ToDoReactJS from '../src/assets/images/blog-images/reactjs-todo.png';
+import ReactJSCode from '../src/assets/images/blog-images/reactjs-code.png';
+import Puqween1 from '../src/assets/images/blog-images/puqween-1.png';
+import Puqween2 from '../src/assets/images/blog-images/puqween-2.png';
+import Puqween3 from '../src/assets/images/blog-images/puqween-3.png';
+import Meatball from '../src/assets/images/blog-images/meatball.png';
+import DivinePower from '../src/assets/images/blog-images/divine-power.png';
+import Instagram from '../src/assets/images/icons/Instagram_Icon.svg';
+import X from '../src/assets/images/icons/Twitter_Icon.svg';
+import Youtube from '../src/assets/images/icons/Youtube_Icon.svg';
 
 
 export default function Home() {
