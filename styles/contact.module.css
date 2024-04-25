@@ -335,8 +335,10 @@ a.button:hover {
 .footer_contact {
     display: flex;
     flex-direction: row;
+    align-items: center;
     padding: 0px 60px;
     width: 100%;
+    height: 500px;
 }
 
 .contact_container {
@@ -457,6 +459,7 @@ a.button:hover {
         flex-direction: column;
         padding: 0px 40px;
         width: 100%;
+        height: auto;
     }
 
 }
@@ -483,22 +486,31 @@ a.button:hover {
 
 }
 
-@media screen and (min-width: 1000px) {
-
-    .gallery_container {
-        margin: 1% 10% 3% 10%;
-    }
-
-    .gallery_img {
-        width: 50%;
-    }
-
-}
 
 @media screen and (min-width: 1200px) {
 
     .section_2 {
         padding: 3% 15%;
+    }
+
+    .footer_text {
+        padding: 50px 200px 0px;
+    }
+
+    .footer_contact {
+        padding: 30px 200px;
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+
+    .footer_text {
+        padding: 50px 250px 0px;
+    }
+
+    .footer_contact {
+        padding: 30px 250px;
     }
 
 }
@@ -507,6 +519,38 @@ a.button:hover {
 
     .section_2 {
         padding: 3% 25%;
+    }
+
+    .footer_text {
+        padding: 30px 400px 0px;
+    }
+
+    .footer_contact {
+        padding: 30px 400px;
+    }
+
+}
+
+@media screen and (min-width: 1800px) {
+
+    .footer_text {
+        padding: 30px 530px 0px;
+    }
+
+    .footer_contact {
+        padding: 50px 500px;
+    }
+
+}
+
+@media screen and (min-width: 2000px) {
+
+    .footer_text {
+        padding: 30px 580px 0px;
+    }
+
+    .footer_contact {
+        padding: 50px 590px;
     }
 
 }

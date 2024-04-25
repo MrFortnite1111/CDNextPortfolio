@@ -32,13 +32,13 @@ export async function POST(request: Request) {
         });
         return NextResponse.json({
             status: "success",
-            message: "Thanks for contacting me, I will get back to you when I can!"
+            message: "Thanks for contacting me, I will get back to you ASAP!"
         });
     } catch (error) {
         console.log(error);
         return NextResponse.json({
             status: "error",
-            message: "Oops, something went wrong :("
+            message: "Oops, something went wrong :( Make sure to double check your info!"
         });
     }
 

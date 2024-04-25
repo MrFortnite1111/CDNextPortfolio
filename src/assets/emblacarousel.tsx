@@ -9,9 +9,9 @@ import {
     PrevButton,
     usePrevNextButtons
 } from './emblacarouselarrowbuttons'
-import FruitQuest from '../../src/assets/images/portfolio-gallery/Fruit-Quest.png';
-import DivinePower from '../../src/assets/images/portfolio-gallery/Divine-Power.png';
-import TracyJCSheet from '../../src/assets/images/portfolio-gallery/Tracy-Jefferson-Character-Sheet.png';
+import FruitQuest from '../../src/assets/images/portfolio-gallery/fruit-quest.png';
+import DivinePower from '../../src/assets/images/portfolio-gallery/divine-power.png';
+import TracyJCSheet from '../../src/assets/images/portfolio-gallery/tracyjefferson-charactersheet.png';
 
 
 

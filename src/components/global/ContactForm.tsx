@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react";
-import styles from "../../../styles/contact.module.css";
+import styles from "../../../styles/styles.module.css";
 import { Alert, Box, Button, TextField, TextareaAutosize, styled, } from "@mui/material";
 
 
@@ -21,16 +21,16 @@ const ContactForm = () => {
         }
     };
 
-    const [email, setEmail] = useState("");
-    const [emailError, setEmailError] = useState(false);
-    const handleEmailChange = e => {
-        setEmail(e.target.value);
-        if (!/^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]$/.test(e.target.value)) {
-            setEmailError(false);
-        } else {
-            setEmailError(true);
-        }
-    };
+    // const [email, setEmail] = useState("");
+    // const [emailError, setEmailError] = useState(false);
+    // const handleEmailChange = e => {
+    //     setEmail(e.target.value);
+    //     if (!/^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]$/.test(e.target.value)) {
+    //         setEmailError(false);
+    //     } else {
+    //         setEmailError(true);
+    //     }
+    // };
 
 
     const [submission, setSubmission] = useState(defaultSubmission);
@@ -94,10 +94,10 @@ const ContactForm = () => {
                         id="email-basic"
                         label="Email"
                         variant="outlined"
-                        value={email}
-                        onChange={handleEmailChange}
-                        error={emailError}
-                        helperText={emailError ? "Please enter a valid email" : ""}
+                        // value={email}
+                        // onChange={handleEmailChange}
+                        // error={emailError}
+                        // helperText={emailError ? "Please enter a valid email" : ""}
                         inputProps={{
                             type: "email",
                         }}
