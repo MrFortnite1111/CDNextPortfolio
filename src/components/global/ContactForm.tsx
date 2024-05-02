@@ -10,16 +10,16 @@ const ContactForm = () => {
         message: null,
     }
 
-    const [name, setName] = useState("");
-    const [nameError, setNameError] = useState(false);
-    const handleNameChange = e => {
-        setName(e.target.value);
-        if (e.target.validity.valid) {
-            setNameError(false);
-        } else {
-            setNameError(true);
-        }
-    };
+    // const [name, setName] = useState("");
+    // const [nameError, setNameError] = useState(false);
+    // const handleNameChange = e => {
+    //     setName(e.target.value);
+    //     if (e.target.validity.valid) {
+    //         setNameError(false);
+    //     } else {
+    //         setNameError(true);
+    //     }
+    // };
 
     // const [email, setEmail] = useState("");
     // const [emailError, setEmailError] = useState(false);
@@ -73,18 +73,18 @@ const ContactForm = () => {
                         name="name"
                         id="name-basic"
                         label="Name"
-                        value={name}
-                        onChange={handleNameChange}
-                        error={nameError}
+                        // value={name}
+                        // onChange={handleNameChange}
+                        // error={nameError}
                         variant="outlined"
                         type="text"
                         required
                         inputProps={{
                             pattern: "[A-Za-z ]+",
                         }}
-                        helperText={
-                            nameError ? "Please enter your name (letters and spaces only)" : ""
-                        }
+                    // helperText={
+                    //     nameError ? "Please enter your name (letters and spaces only)" : ""
+                    // }
                     />
                 </Box>
                 <Box sx={{ pb: { xs: 1, md: 1 }, width: 1 }}>
