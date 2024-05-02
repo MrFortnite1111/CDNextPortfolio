@@ -50,7 +50,6 @@ export default function Home() {
                                             <li><Link className={styles.menu__item_active} href="#">Design</Link></li>
                                             <li><Link className={styles.menu__item} href="./comics-page">Comics</Link></li>
                                             <li><Link className={styles.menu__item} href="./about">About</Link></li>
-                                            <li><Link className={styles.menu__item} href="./contact-page">Contact</Link></li>
                                             <li><Link className={styles.menu__item} href="./resume-page">Resume</Link></li>
                                         </ul>
 
@@ -62,7 +61,6 @@ export default function Home() {
                                     <li><Link className={styles.nav_item_active} href="#">Design</Link></li>
                                     <li><Link className={styles.nav_item} href="./comics-page">Comics</Link></li>
                                     <li><Link className={styles.nav_item} href="./about">About</Link></li>
-                                    <li><Link className={styles.nav_item} href="./contact-page">Contact</Link></li>
                                     <li><Link className={styles.nav_item} href="./resume-page">Resume</Link></li>
                                 </ul>
                             </nav>
