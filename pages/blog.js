@@ -15,6 +15,8 @@ import Puqween2 from '../src/assets/images/blog-images/puqween-2.png';
 import Puqween3 from '../src/assets/images/blog-images/puqween-3.png';
 import Meatball from '../src/assets/images/blog-images/meatball.png';
 import DivinePower from '../src/assets/images/blog-images/divine-power.png';
+import ContactForm from "../src/components/global/ContactForm";
+import Greetings from "../src/assets/images/blog-images/intro.png";
 import Instagram from '../src/assets/images/icons/Instagram_Icon.svg';
 import X from '../src/assets/images/icons/Twitter_Icon.svg';
 import Youtube from '../src/assets/images/icons/Youtube_Icon.svg';
@@ -57,7 +59,7 @@ export default function Home() {
                                             <li><Link className={styles.menu__item} href="./design-gallery">Design</Link></li>
                                             <li><Link className={styles.menu__item} href="./comics-page">Comics</Link></li>
                                             <li><Link className={styles.menu__item} href="./about">About</Link></li>
-                                            <li><Link className={styles.menu__item} href="./resume-page">Resume</Link></li>
+                                            <li><Link className={styles.menu__item} href="/aaron-tans-resume.pdf" locale={false} target='_blank'>Resume</Link></li>
                                         </ul>
 
 
@@ -68,7 +70,7 @@ export default function Home() {
                                     <li><Link className={styles.nav_item} href="/design-gallery">Design</Link></li>
                                     <li><Link className={styles.nav_item} href="./comics-page">Comics</Link></li>
                                     <li><Link className={styles.nav_item} href="./about">About</Link></li>
-                                    <li><Link className={styles.nav_item} href="./resume-page">Resume</Link></li>
+                                    <li><Link className={styles.nav_item} href="/aaron-tans-resume.pdf" locale={false} target='_blank'>Resume</Link></li>
                                 </ul>
                             </nav>
                         </div>
@@ -390,13 +392,39 @@ export default function Home() {
                     </div>
 
                     <footer className={styles.footer}>
+                        <div className={styles.footer_text}>
+                            <p className={styles.p}>
+                                If you have any questions about my work, commissions, and potential to buy my artwork,
+                                please contact me by filling out this form! Please and thank you!
+                            </p>
+                            <p className={styles.p}>
+                                If you wish to contact me directly or the form doesn't work, contact me
+                                through my <a href="mailto:cosmicdesigns979@gmail.com">email</a> please!
+                            </p>
+                        </div>
+
+                        <div className={styles.footer_contact}>
+
+                            <ContactForm />
+
+                            <div className={styles.footer_image}>
+                                <Image
+
+                                    src={Greetings.src}
+                                    width={300}
+                                    height={300}
+                                    alt="Greeting Photo"
+                                />
+                            </div>
+
+                        </div>
                         <ul className={styles.socialnav}>
                             <li>
                                 <a href="https://www.instagram.com/starro_art_/">
                                     <Image
                                         src={Instagram.src}
-                                        width={35}
-                                        height={35}
+                                        width={40}
+                                        height={40}
                                         alt="Instagram"
                                     />
                                 </a>
@@ -405,8 +433,8 @@ export default function Home() {
                                 <a href="https://twitter.com/starro_art_">
                                     <Image
                                         src={X.src}
-                                        width={35}
-                                        height={35}
+                                        width={40}
+                                        height={40}
                                         alt="Twitter - X"
                                     />
                                 </a>
@@ -415,8 +443,8 @@ export default function Home() {
                                 <a href="https://www.youtube.com/@nerdneckdoez209">
                                     <Image
                                         src={Youtube.src}
-                                        width={35}
-                                        height={35}
+                                        width={40}
+                                        height={40}
                                         alt="Youtube"
                                     />
                                 </a>

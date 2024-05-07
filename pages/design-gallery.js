@@ -50,7 +50,7 @@ export default function Home() {
                                             <li><Link className={styles.menu__item_active} href="#">Design</Link></li>
                                             <li><Link className={styles.menu__item} href="./comics-page">Comics</Link></li>
                                             <li><Link className={styles.menu__item} href="./about">About</Link></li>
-                                            <li><Link className={styles.menu__item} href="./resume-page">Resume</Link></li>
+                                            <li><Link className={styles.menu__item} href="/aaron-tans-resume.pdf" locale={false} target='_blank'>Resume</Link></li>
                                         </ul>
 
 
@@ -61,7 +61,7 @@ export default function Home() {
                                     <li><Link className={styles.nav_item_active} href="#">Design</Link></li>
                                     <li><Link className={styles.nav_item} href="./comics-page">Comics</Link></li>
                                     <li><Link className={styles.nav_item} href="./about">About</Link></li>
-                                    <li><Link className={styles.nav_item} href="./resume-page">Resume</Link></li>
+                                    <li><Link className={styles.nav_item} href="/aaron-tans-resume.pdf" locale={false} target='_blank'>Resume</Link></li>
                                 </ul>
                             </nav>
                         </div>
@@ -79,7 +79,10 @@ export default function Home() {
                             </EmblaCarousel>
                         </div>
                     </div>
-                    <div className={styles.section_2_header}>
+
+                    {/* Save this to finish later; use NextJS Image Gallery */}
+
+                    {/* <div className={styles.section_2_header}>
                         <h2 className={styles.h2}>ART CATALOGUE</h2>
                     </div>
 
@@ -95,7 +98,7 @@ export default function Home() {
                     <div className={styles.section_2}>
                         <div className={styles.artlinkcontainer}><a className={styles.artlink} href="Galleries/gallery-gdes.html"><h3>PHOTOSHOP</h3></a></div>
                         <div className={styles.artlinkcontainer}><a className={styles.artlink} href="Galleries/gallery-gdes.html"><h3>ILLUSTRATOR</h3></a></div>
-                    </div>
+                    </div> */}
 
 
                     <footer className={styles.footer}>

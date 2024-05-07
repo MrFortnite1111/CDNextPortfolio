@@ -364,8 +364,33 @@ a.button:hover {
 
 .footer {
     background-color: #483A7C;
-    height: 70px;
+    height: auto;
     width: 100%;
+}
+
+.footer_text {
+    padding: 30px 90px 0px;
+}
+
+.footer_contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 60px;
+    width: 100%;
+    height: 500px;
+}
+
+.contact_container {
+    width: 100%;
+}
+
+.footer_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
 }
 
 .socialnav {
@@ -374,7 +399,7 @@ a.button:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 10px;
+    padding: 30px 40px;
     margin: 0%;
 }
 
@@ -446,6 +471,10 @@ a.button:hover {
         width: 80%;
     }
 
+    .footer_text {
+        padding: 20px 30px 0px;
+    }
+
 }
 
 @media screen and (min-width: 680px) {
@@ -483,6 +512,14 @@ a.button:hover {
         display: block;
     }
 
+    .footer_contact {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 40px;
+        width: 100%;
+        height: auto;
+    }
+
 }
 
 @media screen and (min-width: 771px) {
@@ -514,12 +551,65 @@ a.button:hover {
         padding: 3% 15%;
     }
 
+    .footer_text {
+        padding: 50px 200px 0px;
+    }
+
+    .footer_contact {
+        padding: 30px 200px;
+    }
+
 }
+
+@media screen and (min-width: 1400px) {
+
+    .footer_text {
+        padding: 50px 250px 0px;
+    }
+
+    .footer_contact {
+        padding: 30px 250px;
+    }
+
+}
+
 
 @media screen and (min-width: 1600px) {
 
     .blog_post {
         padding: 3% 25%;
+    }
+
+    .footer_text {
+        padding: 30px 400px 0px;
+    }
+
+    .footer_contact {
+        padding: 30px 400px;
+    }
+
+}
+
+@media screen and (min-width: 1800px) {
+
+    .footer_text {
+        padding: 30px 530px 0px;
+    }
+
+    .footer_contact {
+        padding: 50px 500px;
+    }
+
+}
+
+@media screen and (min-width: 2000px) {
+
+    .footer_text {
+        padding: 30px 580px 0px;
+    }
+
+    .footer_contact {
+        padding: 50px 590px;
     }
 
 }
