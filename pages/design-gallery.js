@@ -72,7 +72,7 @@ export default function Home() {
 
 
                     <div className={styles.section_1}>
-                        <h2 className={styles.h2}>MY RECENT ARTWORKS!</h2>
+                        <h2 className={styles.h2}>PORTFOLIO</h2>
                         <div className={styles.gallery_container}>
 
                             <EmblaCarousel>

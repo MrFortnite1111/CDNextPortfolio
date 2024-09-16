@@ -9,9 +9,9 @@ import {
     PrevButton,
     usePrevNextButtons
 } from './emblacarouselarrowbuttons'
-import TheNoise from '../../src/assets/images/recent-art-gallery/TheNoise-PizzaTower.jpg';
-import BygoneLandsCover from '../../src/assets/images/recent-art-gallery/Bygone-Lands-Cover.png';
-import Farewell from '../../src/assets/images/recent-art-gallery/Farewell-Celeste.jpg';
+import TheNoise from '../../src/assets/images/design-portfolio-gallery/TheNoise-PizzaTower.jpg';
+import BygoneLandsCover from '../../src/assets/images/design-portfolio-gallery/Bygone-Lands-Cover.png';
+import Farewell from '../../src/assets/images/design-portfolio-gallery/Farewell-Celeste.jpg';
 
 
 
