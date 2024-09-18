@@ -9,9 +9,14 @@ import {
     PrevButton,
     usePrevNextButtons
 } from './emblacarouselarrowbuttons'
-import TheNoise from '../../src/assets/images/design-portfolio-gallery/TheNoise-PizzaTower.jpg';
-import BygoneLandsCover from '../../src/assets/images/design-portfolio-gallery/Bygone-Lands-Cover.png';
-import Farewell from '../../src/assets/images/design-portfolio-gallery/Farewell-Celeste.jpg';
+import ArtGreenPoster from '../../src/assets/images/design-portfolio-gallery/artonthegreen_mockup.jpg';
+import WhatsDesignPoster from '../../src/assets/images/design-portfolio-gallery/whatisdesign_mockup.jpg';
+import QuoteMe from '../../src/assets/images/design-portfolio-gallery/quoteme_mockup.jpg';
+import Preflight from '../../src/assets/images/design-portfolio-gallery/preflight_onepage_mockup.jpg';
+import Archibald from '../../src/assets/images/design-portfolio-gallery/archibald_mockup.jpg';
+import AlbumCover from '../../src/assets/images/design-portfolio-gallery/septemberrain_albumcover.jpg';
+import ExploreCover from '../../src/assets/images/design-portfolio-gallery/explore_cover.jpg';
+import BusinessCards from '../../src/assets/images/design-portfolio-gallery/businesscard_mockup.jpg';
 
 
 
@@ -32,28 +37,86 @@ export default function EmblaCarousel() {
                     <div className="embla__slide flex items-center justify-center">
                         <Image
                             className={styles.gallery_img}
-                            src={TheNoise.src}
+                            src={ArtGreenPoster.src}
                             width={2800}
                             height={3500}
-                            alt="The Noise - Pizza Tower"
+                            alt="Poster with a landscape and a canvas design on display to promote
+                            Art on the Green."
                         />
                     </div>
                     <div className="embla__slide flex items-center justify-center">
                         <Image
                             className={styles.gallery_img}
-                            src={BygoneLandsCover.src}
+                            src={WhatsDesignPoster.src}
                             width={2800}
                             height={3500}
-                            alt="Bygone Lands Cover"
+                            alt="Framed poster on the floor displaying a megaphone made out of graphic 
+                            design elements, shooting the words 'Graphic Design' into a person's eye."
                         />
                     </div>
                     <div className="embla__slide flex items-center justify-center">
                         <Image
                             className={styles.gallery_img}
-                            src={Farewell.src}
+                            src={QuoteMe.src}
                             width={2800}
                             height={3500}
-                            alt="Farewell - Celeste"
+                            alt="Framed poster on a shelf displaying a charicature of Bob Ross made out of
+                            words, with the quote saying, 'You're limited only by your creativity and your
+                            willingness to practice.'"
+                        />
+                    </div>
+                    <div className="embla__slide flex items-center justify-center">
+                        <Image
+                            className={styles.gallery_img}
+                            src={Preflight.src}
+                            width={3000}
+                            height={3500}
+                            alt="A page displaying three different mockups of a poster advertising for a
+                            student portfolio review event called Preflight. The mockups include a physical
+                            poster, a Facebook banner, and a webpage banner."
+                        />
+                    </div>
+                    <div className="embla__slide flex items-center justify-center">
+                        <Image
+                            className={styles.gallery_img}
+                            src={Archibald.src}
+                            width={2800}
+                            height={3500}
+                            alt="A framed poster stand advertising a wine glass with googly
+                            eyes called 'Archibald,' containing the tagline, 'You matter. 
+                            - Archibald.'"
+                        />
+                    </div>
+                    <div className="embla__slide flex items-center justify-center">
+                        <Image
+                            className={styles.gallery_img}
+                            src={AlbumCover.src}
+                            width={2800}
+                            height={3500}
+                            alt="An album cover for a single called 'September Rain' by Makoto 
+                            Matsushita. The design showcases a lone man under a street lamp, 
+                            looking towards a house covered in plants while its raining."
+                        />
+                    </div>
+                    <div className="embla__slide flex items-center justify-center">
+                        <Image
+                            className={styles.gallery_img}
+                            src={ExploreCover.src}
+                            width={2800}
+                            height={3500}
+                            alt="An Explore travel magazine cover displaying a dragon statue 
+                            resting on buildings under the ocean with a few sharks and turtles 
+                            swimming about."
+                        />
+                    </div>
+                    <div className="embla__slide flex items-center justify-center">
+                        <Image
+                            className={styles.gallery_img}
+                            src={BusinessCards.src}
+                            width={3000}
+                            height={3500}
+                            alt="A mockup displaying many stacked purple and yellow business cards 
+                            for my brand, Cosmic Designs."
                         />
                     </div>
                 </div>
