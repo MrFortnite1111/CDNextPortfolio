@@ -435,7 +435,7 @@ a.button:hover {
   }
 
   .gallery_container {
-    margin: 10px 30px 50px 30px;
+    margin: 10px 30px 0px 30px;
   }
 
   .footer_text {
@@ -496,7 +496,7 @@ a.button:hover {
   }
 
   .gallery_container {
-    margin: 5px 25px 45px 25px;
+    margin: 5px 25px 0px 25px;
   }
 
   .gallery_img {
@@ -530,7 +530,7 @@ a.button:hover {
   }
 
   .gallery_container {
-    margin: 20px 100px;
+    margin: 20px 100px 0px 100px;
   }
 
   .section_2 {
@@ -538,7 +538,7 @@ a.button:hover {
   }
 
   .gallery_img {
-    width: 60%;
+    width: 70%;
   }
 
 }
@@ -546,7 +546,7 @@ a.button:hover {
 @media screen and (min-width: 1000px) {
 
   .gallery_container {
-    margin: 1% 10% 3% 10%;
+    margin: 1% 10% 0% 10%;
   }
 
   .gallery_img {
@@ -562,7 +562,7 @@ a.button:hover {
   }
 
   .gallery_container {
-    margin: 1% 20% 3% 20%;
+    margin: 1% 20% 0% 20%;
   }
 
   .gallery_img {
@@ -586,7 +586,7 @@ a.button:hover {
   }
 
   .gallery_container {
-    margin: 4% 20% 6% 20%;
+    margin: 4% 20% 0% 20%;
   }
 
   .footer_contact {
@@ -602,7 +602,7 @@ a.button:hover {
   }
 
   .gallery_container {
-    margin: 2% 30% 4% 30%;
+    margin: 2% 30% 0% 30%;
   }
 
   .gallery_img {

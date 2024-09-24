@@ -119,10 +119,10 @@ export default function Home() {
 
                                         <ul className={styles.menu__box}>
                                             <li><Link className={styles.menu__item_active} href="/">Home</Link></li>
-                                            <li><Link className={styles.menu__item} href="./blog">Blog</Link></li>
-                                            <li><Link className={styles.menu__item} href="./design-gallery">Design</Link></li>
-                                            <li><Link className={styles.menu__item} href="./comics-page">Comics</Link></li>
-                                            <li><Link className={styles.menu__item} href="./about">About</Link></li>
+                                            <li><Link className={styles.menu__item} href="/blog">Blog</Link></li>
+                                            <li><Link className={styles.menu__item} href="/design-gallery">Design</Link></li>
+                                            <li><Link className={styles.menu__item} href="/comics-page">Comics</Link></li>
+                                            <li><Link className={styles.menu__item} href="/about">About</Link></li>
                                             <li><Link className={styles.menu__item} href="/aaron-tans-resume.pdf" locale={false} target='_blank'>Resume</Link></li>
                                         </ul>
 
@@ -130,10 +130,10 @@ export default function Home() {
                                     </div>
 
                                     <li><Link className={styles.nav_item_active} href="/">Home</Link></li>
-                                    <li><Link className={styles.nav_item} href="./blog">Blog</Link></li>
+                                    <li><Link className={styles.nav_item} href="/blog">Blog</Link></li>
                                     <li><Link className={styles.nav_item} href="/design-gallery">Design</Link></li>
-                                    <li><Link className={styles.nav_item} href="./comics-page">Comics</Link></li>
-                                    <li><Link className={styles.nav_item} href="./about">About</Link></li>
+                                    <li><Link className={styles.nav_item} href="/comics-page">Comics</Link></li>
+                                    <li><Link className={styles.nav_item} href="/about">About</Link></li>
                                     <li><Link className={styles.nav_item} href="/aaron-tans-resume.pdf" locale={false} target='_blank'>Resume</Link></li>
                                 </ul>
                             </nav>
@@ -153,6 +153,10 @@ export default function Home() {
                             <Carousel>
                             </Carousel>
 
+                        </div>
+
+                        <div className={styles.button_container}>
+                            <a className={styles.button} href="/design-gallery">See More Projects</a>
                         </div>
                     </div>
                     <div className={styles.section_2_header}>
@@ -176,7 +180,7 @@ export default function Home() {
                             <hr className={styles.hr} />
                             <p className={styles.p} ref={(e) => setRef(paraRefs, e)}>
                                 Bygone lands is a passion project of mine that has been in the works for a while now.
-                                It is a graphic novel series that tells of a story of discovery and fantasy.
+                                It is a fantasy and adventure graphic novel series that is about discovery and exploration.
                             </p>
                             <p className={styles.p} ref={(e) => setRef(paraRefs, e)}>
                                 It begins with a couple of students learning about myths and stories of an ancient and secret world.
@@ -185,7 +189,7 @@ export default function Home() {
                                 secrets of this otherworldly land.
                             </p>
                             <div className={styles.button_container} ref={(e) => setRef(actionRefs, e)}>
-                                <a className={styles.button} href="comic-page.html#paper-adventures">More Info</a>
+                                <a className={styles.button} href="/comics-page#paper-adventures">More Info</a>
                             </div>
                         </div>
                     </div>
@@ -212,7 +216,7 @@ export default function Home() {
                                 Zone as they learn about the inhabitants and the environment!
                             </p>
                             <div className={styles.button_container} ref={(e) => setRef(actionRefs, e)}>
-                                <a className={styles.button} href="comic-page.html#flourishing-twilight">More Info</a>
+                                <a className={styles.button} href="/comics-page#flourishing-twilight">More Info</a>
                             </div>
                         </div>
                     </div>
