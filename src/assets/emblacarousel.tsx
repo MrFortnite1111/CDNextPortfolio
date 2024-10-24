@@ -80,7 +80,7 @@ export default function EmblaCarousel() {
                         <Image
                             className={styles.gallery_img}
                             src={TheLight.src}
-                            width={2800}
+                            width={2300}
                             height={3500}
                             alt="Digital artwork showcasing a ghost ship with a lighthouse on top of it,
                             shining light onto a silhouetted woman."

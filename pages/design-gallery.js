@@ -72,12 +72,39 @@ export default function Home() {
 
 
                     <div className={styles.section_1}>
-                        <h2 className={styles.h2}>PORTFOLIO</h2>
+                        <h2 className={styles.h2}>GALLERY SLIDESHOW</h2>
+                        <h3 className={styles.h3}>Some of the finest in the galaxy!</h3>
                         <div className={styles.gallery_container}>
 
                             <EmblaCarousel>
                             </EmblaCarousel>
                         </div>
+                    </div>
+
+                    <div className={styles.section_2}>
+                        <div className={styles.section_2_description}>
+                            <h3 className={styles.h3}>Graphic Design</h3>
+                            <hr className={styles.hr} />
+                            <p className={styles.p}>
+                                I have been studying and refining my use of minimalistic designs when it comes
+                                to learning all about Graphic Design in North Idaho College. During my time here,
+                                I've learned the basics to using Adobe Illustrator, Photoshop, and InDesign to create
+                                vector-based illustrations and create appealing Photoshop projects.
+                            </p>
+                            <div className={styles.button_container}>
+                                <a className={styles.button} href="/comics-page#paper-adventures">Portfolio</a>
+                            </div>
+                        </div>
+                        {/* <div className={styles.section_2_image}>
+                            <Image
+                                ref={(e) => setRef(imageRefs, e)}
+                                className={styles.img}
+                                src={BygoneLandsCover.src}
+                                width={1800}
+                                height={2500}
+                                alt="Bygone Lands Cover"
+                            />
+                        </div> */}
                     </div>
 
                     {/* Save this to finish later; use NextJS Image Gallery */}
@@ -131,7 +158,7 @@ export default function Home() {
 
                         <ul className={styles.socialnav}>
                             <li>
-                                <a href="https://www.instagram.com/starro_art_/">
+                                <a href="https://www.instagram.com/starro_art_/" target="_blank">
                                     <Image
                                         src={Instagram.src}
                                         width={40}
@@ -141,7 +168,7 @@ export default function Home() {
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/starro_art_">
+                                <a href="https://twitter.com/starro_art_" target="_blank">
                                     <Image
                                         src={X.src}
                                         width={40}
@@ -151,7 +178,7 @@ export default function Home() {
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.youtube.com/@nerdneckdoez209">
+                                <a href="https://www.youtube.com/@nerdneckdoez209" target="_blank">
                                     <Image
                                         src={Youtube.src}
                                         width={40}

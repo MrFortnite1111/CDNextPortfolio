@@ -69,14 +69,14 @@ export const PrevButton: React.FC<PropType> = (props) => {
 
     return (
         <button
-            className="embla__button embla__button--prev"
+            className={style.embla__button}
             type="button"
             {...restProps}
         >
             <Image
                 src={backwardarrow.src}
-                width={40}
-                height={40}
+                width={45}
+                height={45}
                 alt="Prev Button"
             />
             {children}
@@ -89,15 +89,15 @@ export const NextButton: React.FC<PropType> = (props) => {
 
     return (
         <button
-            className="embla__button embla__button--next"
+            className={style.embla__button}
             type="button"
             {...restProps}
         >
             <Image
                 src={forwardarrow.src}
-                width={40}
-                height={40}
-                alt="Prev Button"
+                width={45}
+                height={45}
+                alt="Forward Button"
             />
             {children}
         </button>

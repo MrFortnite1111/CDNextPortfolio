@@ -21,7 +21,7 @@ img {
 
 .embla__viewport {
   overflow: hidden;
-  padding: 20px 0;
+  padding: 0;
 }
 
 .embla__container {
@@ -31,7 +31,7 @@ img {
 
 .embla__slide {
   display: flex;
-  flex: 0 0 100%;
+  flex: 0 0 80%;
   align-items: center;
   justify-content: center;
   min-width: 0;

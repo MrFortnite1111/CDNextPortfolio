@@ -170,7 +170,7 @@ export default function Home() {
                         </div>
                         <ul className={styles.socialnav}>
                             <li>
-                                <a href="https://www.instagram.com/starro_art_/">
+                                <a href="https://www.instagram.com/starro_art_/" target="_blank">
                                     <Image
                                         src={Instagram.src}
                                         width={40}
@@ -180,7 +180,7 @@ export default function Home() {
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/starro_art_">
+                                <a href="https://twitter.com/starro_art_" target="_blank">
                                     <Image
                                         src={X.src}
                                         width={40}
@@ -190,7 +190,7 @@ export default function Home() {
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.youtube.com/@nerdneckdoez209">
+                                <a href="https://www.youtube.com/@nerdneckdoez209" target="_blank">
                                     <Image
                                         src={Youtube.src}
                                         width={40}
