@@ -183,10 +183,9 @@ export default function Home() {
                                 It is a fantasy and adventure graphic novel series that is about discovery and exploration.
                             </p>
                             <p className={styles.p} ref={(e) => setRef(paraRefs, e)}>
-                                It begins with a couple of students learning about myths and stories of an ancient and secret world.
-                                With this information, they find and reenact the process to open the portal again.
-                                However, they instead got dragged into an abandoned world of ruins and must uncover the
-                                secrets of this otherworldly land.
+                            Mark and Tracy attend the annual Sky Festival and meet up with their group of friends,
+                            until suddenly, they get sucked into a portal gateway into another dimension of mysteries
+                            and secrets. Join them as they explore and uncover the mystery lurking in the archaic Bygone Lands!
                             </p>
                             <div className={styles.button_container} ref={(e) => setRef(actionRefs, e)}>
                                 <a className={styles.button} href="/comics-page#paper-adventures">More Info</a>
@@ -212,8 +211,7 @@ export default function Home() {
                             <p className={styles.p} ref={(e) => setRef(paraRefs, e)}>
                                 A couple of instructors take their days off at a lovely beach, until they discovered something
                                 otherworldly arise from the ocean! Join these three travelers on their journey towards the
-                                Twilight
-                                Zone as they learn about the inhabitants and the environment!
+                                Twilight Zone as they learn about the inhabitants and the environment!
                             </p>
                             <div className={styles.button_container} ref={(e) => setRef(actionRefs, e)}>
                                 <a className={styles.button} href="/comics-page#flourishing-twilight">More Info</a>

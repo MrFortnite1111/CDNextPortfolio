@@ -85,17 +85,14 @@ export default function Home() {
                                 <h2 className={styles.h2}>Bygone Lands</h2>
                                 <hr className={styles.hr} />
                                 <p className={styles.p}>
-                                    A group of friends became curious of Cranberry Town's mysterious legends, leading them
-                                    towards
-                                    an
-                                    abandoned portal to an unknown world. Follow along this tale as they are swept away into the
-                                    archaic
-                                    land of Paperville.
+                                    Mark and Tracy attend the annual Sky Festival and meet up with their group of friends,
+                                    until suddenly, they get sucked into a portal gateway into another dimension of mysteries
+                                    and secrets. Join them as they explore and uncover the mystery lurking in the archaic Bygone Lands!
                                 </p>
                                 <div className={styles.button_container}>
                                     <a className={styles.button_alt_active}
                                         target='blank'
-                                        href="/bygonelands-earlypreview.pdf">Preview</a>
+                                        href="/bygonelands-chapter1demo.pdf">Preview</a>
                                 </div>
                                 <hr className={styles.hr} />
                                 <h3 className={styles.h3}>Full Comic Coming Soon!</h3>
