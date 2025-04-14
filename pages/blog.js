@@ -1,8 +1,9 @@
 import Head from 'next/head';
+import Header from '../src/components/global/Header';
+import bannerImg from '../src/assets/images/banner-images/what-now.jpg';
 import styles from '../styles/blog.module.css';
 import Image from 'next/image';
 import Link from "next/link";
-import Logo from '../src/assets/images/icons/Logo.png';
 import BLSketch from '../src/assets/images/blog-images/bygone-lands-sketch.jpg';
 import BLCover from '../src/assets/images/blog-images/bygone-lands-cover.jpg';
 import BLAnnoucement from '../src/assets/images/blog-images/bygone-lands-annoucement.jpg';
@@ -32,52 +33,10 @@ export default function Home() {
 
             <main className={styles.body}>
                 <div className={styles.container}>
-                    <header className={styles.header_container}>
-                        <div className={styles.header}>
-                            <div className={styles.logo}>
-                                <Link href="/">
-                                    <Image
-                                        className={styles.img}
-                                        src={Logo.src}
-                                        width={100}
-                                        height={20}
-                                        alt="logo"
-                                    />
-                                </Link>
-                            </div>
-                            <nav className={styles.nav}>
-                                <ul>
-                                    <div className={styles.hamburgermenu}>
-                                        <input id="menu-toggle" className={styles.menu__toggle} type="checkbox" />
-                                        <label className={styles.menu__btn} for={"menu-toggle"}>
-                                            <span></span>
-                                        </label>
-
-                                        <ul className={styles.menu__box}>
-                                            <li><Link className={styles.menu__item} href="/">Home</Link></li>
-                                            <li><Link className={styles.menu__item_active} href="#">Blog</Link></li>
-                                            <li><Link className={styles.menu__item} href="./design-gallery">Design</Link></li>
-                                            <li><Link className={styles.menu__item} href="./comics-page">Comics</Link></li>
-                                            <li><Link className={styles.menu__item} href="./about">About</Link></li>
-                                            <li><Link className={styles.menu__item} href="/aaron-tans-resume.pdf" locale={false} target='_blank'>Resume</Link></li>
-                                        </ul>
-
-
-                                    </div>
-
-                                    <li><Link className={styles.nav_item} href="/">Home</Link></li>
-                                    <li><Link className={styles.nav_item_active} href="#">Blog</Link></li>
-                                    <li><Link className={styles.nav_item} href="/design-gallery">Design</Link></li>
-                                    <li><Link className={styles.nav_item} href="./comics-page">Comics</Link></li>
-                                    <li><Link className={styles.nav_item} href="./about">About</Link></li>
-                                    <li><Link className={styles.nav_item} href="/aaron-tans-resume.pdf" locale={false} target='_blank'>Resume</Link></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class={styles.banner}>
-                            <p className={styles.h1}>MY BLOG!</p>
-                        </div>
-                    </header>
+                    <Header 
+                        bannerImage={bannerImg.src}
+                        title="MY BLOG"
+                    />
 
                     <div className={styles.blog_section}>
 
