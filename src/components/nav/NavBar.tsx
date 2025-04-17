@@ -19,12 +19,12 @@ const NavBar = () => {
 
     const isActive = (href) => {
         if (href === "/") {
-          return pathname === "/";
+            return pathname === "/";
         }
         return pathname === href || pathname.startsWith(href + "/") || pathname.startsWith(href + "?");
-      };
-      
-      
+    };
+
+
 
     return (
 
@@ -50,42 +50,10 @@ const NavBar = () => {
 
                 <ul className={styles.menu__box}>
                     {navItems.map((item) => (
-                            <li key={item.href}>
-                                {item.external ? (
-                                    <a
-                                        className={styles.menu__item}
-                                        href={item.href}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        {item.label}
-                                    </a>
-                                ) : (
-                                    <Link
-                                        className={isActive(item.href) ? styles.menu__item_active : styles.menu__item}
-                                        href={item.href}
-                                    >
-                                        {item.label}
-                                    </Link>
-                                )}
-                            </li>
-                        ))}
-                    {/* <li><Link className={styles.menu__item_active} href="/">Home</Link></li>
-                    <li><Link className={styles.menu__item} href="/blog">Blog</Link></li>
-                    <li><Link className={styles.menu__item} href="/design-gallery">Design</Link></li>
-                    <li><Link className={styles.menu__item} href="/comics-page">Comics</Link></li>                        
-                    <li><Link className={styles.menu__item} href="/about">About</Link></li>
-                    <li><Link className={styles.menu__item} href="/aaron-tans-resume.pdf" locale={false} target='_blank'>Resume</Link></li> */}
-                </ul>
-            </div>
-
-            {/* Desktop Nav */}
-            <ul>
-                {navItems.map((item) => (
                         <li key={item.href}>
                             {item.external ? (
                                 <a
-                                    className={styles.nav_item}
+                                    className={styles.menu__item}
                                     href={item.href}
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -94,7 +62,7 @@ const NavBar = () => {
                                 </a>
                             ) : (
                                 <Link
-                                    className={isActive(item.href)? styles.nav_item_active : styles.nav_item}
+                                    className={isActive(item.href) ? styles.menu__item_active : styles.menu__item}
                                     href={item.href}
                                 >
                                     {item.label}
@@ -102,12 +70,32 @@ const NavBar = () => {
                             )}
                         </li>
                     ))}
-                {/* <li><Link className={styles.nav_item_active} href="/">Home</Link></li>
-                <li><Link className={styles.nav_item} href="/blog">Blog</Link></li>
-                <li><Link className={styles.nav_item} href="/design-gallery">Design</Link></li>
-                <li><Link className={styles.nav_item} href="/comics-page">Comics</Link></li>
-                <li><Link className={styles.nav_item} href="/about">About</Link></li>
-                <li><Link className={styles.nav_item} href="/aaron-tans-resume.pdf" locale={false} target='_blank'>Resume</Link></li> */}
+                </ul>
+            </div>
+
+            {/* Desktop Nav */}
+            <ul>
+                {navItems.map((item) => (
+                    <li key={item.href}>
+                        {item.external ? (
+                            <a
+                                className={styles.nav_item}
+                                href={item.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {item.label}
+                            </a>
+                        ) : (
+                            <Link
+                                className={isActive(item.href) ? styles.nav_item_active : styles.nav_item}
+                                href={item.href}
+                            >
+                                {item.label}
+                            </Link>
+                        )}
+                    </li>
+                ))}
             </ul>
         </nav>
 

@@ -36,3 +36,23 @@ img {
   justify-content: center;
   min-width: 0;
 }
+
+/* Increase specificity by stacking class selectors */
+
+.yarl__container .yarl__slide.yarl__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.yarl__slide.yarl__slide img {
+  display: block;
+  margin: auto;
+  max-width: 90vw;
+  max-height: 90vh;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+}
+

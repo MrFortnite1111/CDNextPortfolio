@@ -469,7 +469,7 @@ a.button:hover {
 @media screen and (max-width: 480px) {
 
   .banner {
-    width: auto;
+    height: 400px;
   }
 
   .banner h1 {
