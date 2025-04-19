@@ -14,7 +14,6 @@ const NavBar = () => {
         { label: "Design", href: "/design-directory" },
         { label: "Comics", href: "/comics-page" },
         { label: "About", href: "/about" },
-        { label: "Resume", href: "/aaron-tans-resume.pdf", external: true }
     ];
 
     const isActive = (href) => {

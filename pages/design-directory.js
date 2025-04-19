@@ -62,7 +62,7 @@ export default function Home() {
                             />
                         </div>
                         <div className={styles.section_2_description}>
-                            <h3 className={styles.h3}>Digital Art/Procreate</h3>
+                            <h3 className={styles.h3}>Illustrations/Procreate</h3>
                             <hr className={styles.hr} />
                             <p className={styles.p}>
                                 Drawing has always been my passion since I was a kid, but I only really started with
@@ -71,7 +71,7 @@ export default function Home() {
                                 and meaningful art pieces that stand out with their own flare and style.
                             </p>
                             <div className={styles.button_container}>
-                                <a className={styles.button} href="/comics-page#paper-adventures">Digital Art Portfolio</a>
+                                <a className={styles.button} href="/gallery-digitalart">Illustration Portfolio</a>
                             </div>
                         </div>
                     </div>

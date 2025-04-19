@@ -1,10 +1,9 @@
 import Head from 'next/head';
 import Header from '../src/components/global/Header';
 import bannerImg from '../src/assets/images/banner-images/itsame.jpg';
-import styles from '../styles/about.module.css';
+import styles from '../styles/styles.module.css';
 import Image from 'next/image';
-import ATan from "../src/assets/images/aboutme-images/aaron-tan.png";
-import ATanGallery from "../src/assets/images/aboutme-images/aaron-exhibition.jpg";
+import ATan from "../public/images/about-me/aarontan-profile.jpg";
 import Footer from '../src/components/global/Footer';
 
 
@@ -20,29 +19,22 @@ export default function Home() {
                 <div className={styles.container}>
                     <Header
                         bannerImage={bannerImg.src}
-                        title="DESIGN GALLERY"
+                        title="ABOUT ME"
                     />
 
                     <div className={styles.section_2}>
-                        <div className={styles.section_2_image}>
+                        <div className={styles.about_images}>
                             <Image
                                 className={styles.img}
                                 src={ATan.src}
-                                width={2000}
-                                height={2000}
+                                width={2500}
+                                height={2500}
                                 alt="Aaron Tan"
-                            />
-                            <Image
-                                className={styles.img}
-                                src={ATanGallery.src}
-                                width={2000}
-                                height={2000}
-                                alt="Aaron at the Exhibition Gallery"
                             />
                         </div>
 
                         <div className={styles.section_2_description}>
-                            <h2 className={styles.h2}>Hi! My name's Aaron Tan!</h2>
+                            <h2 className={styles.h2}>Hi! Greetings! Welcome!!</h2>
                             <hr className={styles.hr} />
                             <p className={styles.p}>
                                 Growing up reading comics and drawing silly little characters, Aaron Tan sets his eyes on
@@ -53,9 +45,12 @@ export default function Home() {
                             </p>
                             <p className={styles.p}>
                                 Aaron usually draws many characters and art projects traditionally and digitally. He is
-                                reworking on his comic called, "Paper Adventures", to make it a lot more accessible to the
+                                reworking on his graphic novel called, "Bygone Lands", to make it a lot more accessible to the
                                 public. Many of his works can be found on his social media platforms.
                             </p>
+                            <div className={styles.button_container}>
+                                <a className={styles.button} href="/aaron-tans-resume.pdf" target='_blank' >My Resume</a>
+                            </div>
                         </div>
                     </div>
 

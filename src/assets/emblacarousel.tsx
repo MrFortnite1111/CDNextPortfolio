@@ -9,15 +9,15 @@ import {
     PrevButton,
     usePrevNextButtons
 } from './emblacarouselarrowbuttons'
-import ArtGreenPoster from '../../src/assets/images/design-portfolio-gallery/artonthegreen_mockup.jpg';
-import WhatsDesignPoster from '../../src/assets/images/design-portfolio-gallery/whatisdesign_mockup.jpg';
-import QuoteMe from '../../src/assets/images/design-portfolio-gallery/quoteme_mockup.jpg';
-import ExploreCover from '../../src/assets/images/design-portfolio-gallery/explore_cover.jpg';
-import BygoneLandsCover from '../../src/assets/images/comic-covers/bygonelands-cover.png';
-import TheLight from '../../src/assets/images/portfolio-gallery/thelight.jpg';
-import Electrifying from '../../src/assets/images/portfolio-gallery/electrifying.jpg';
-import DNDAlbum from '../../src/assets/images/portfolio-gallery/dndalbum_mockup.jpg';
-import HusketTolerates from '../../src/assets/images/portfolio-gallery/husket_tolerates.jpg';
+import Lawton from '../../public/images/graphicdesign/lawton-invitation.jpg';
+import Inlander from '../../public/images/graphicdesign/inlander-summercamps-cover.jpg';
+import DNDPoster from '../../public/images/illustrations/searedembers-poster.jpg';
+import DNDAlbum from '../../public/images/illustrations/dndalbum-mockup.jpg';
+import ReefArchives from '../../public/images/graphicdesign/reefarchive-ux.jpg';
+import Meteora from '../../public/images/illustrations/meteoras-dance.jpg';
+import Pepsi from '../../public/images/graphicdesign/pepsitruckwrap_onepage.jpg';
+import Overgrowth from '../../public/images/illustrations/overgrowth-print.jpg';
+import Serenity from '../../public/images/illustrations/serenityinthousands.jpg';
 
 
 export default function EmblaCarousel() {
@@ -32,40 +32,40 @@ export default function EmblaCarousel() {
 
     const slides = [
         {
-            src: ArtGreenPoster.src,
-            alt: "Art on the Green",
+            src: Lawton.src,
+            alt: "Lawton Invitation - Bubble Coral Aquarium",
         },
         {
-            src: WhatsDesignPoster.src,
-            alt: "What is Graphic & Web Design Poster",
+            src: Inlander.src,
+            alt: "Inlander Summer Camps Cover 2025",
         },
         {
-            src: QuoteMe.src,
-            alt: "Bob Ross Quote Poster",
-        },
-        {
-            src: BygoneLandsCover.src,
-            alt: "Cover for my graphic novel, Bygone Lands",
-        },
-        {
-            src: TheLight.src,
-            alt: "The Light (2024)",
-        },
-        {
-            src: ExploreCover.src,
-            alt: "EXPLORE Magazine Cover",
-        },
-        {
-            src: Electrifying.src,
-            alt: "Electrifying (2023)",
+            src: DNDPoster.src,
+            alt: "Seared Embers Poster - DnD",
         },
         {
             src: DNDAlbum.src,
-            alt: "Elegy for M'yirgdrar Album Cover (2024)",
+            alt: "Elegy for M'yirgdrar Album Mockup",
         },
         {
-            src: HusketTolerates.src,
-            alt: "Husket Tolerates (2024)",
+            src: ReefArchives.src,
+            alt: "Reef Archive UX Project",
+        },
+        {
+            src: Meteora.src,
+            alt: "Meteora's Dance (2024)",
+        },
+        {
+            src: Pepsi.src,
+            alt: "Pepsi Truck Wrap Design One Page",
+        },
+        {
+            src: Overgrowth.src,
+            alt: "Overgrowth (2024)",
+        },
+        {
+            src: Serenity.src,
+            alt: "Serenity in Thousands (2023)",
         },
     ];
 

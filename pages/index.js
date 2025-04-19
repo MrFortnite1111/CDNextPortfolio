@@ -1,10 +1,11 @@
 import { useEffect, useRef } from 'react';
 import Head from 'next/head';
 import Header from '../src/components/global/Header';
-import bannerImg from '../src/assets/images/banner-images/banner.jpg';
+import bannerImg from '../src/assets/images/banner-images/void.jpg';
 import styles from '../styles/styles.module.css';
 import Image from 'next/image';
-// import Carousel from "../src/assets/emblacarousel";
+import Carousel from "../src/assets/emblacarousel";
+import ATanIntro from "../public/images/about-me/aarontan-intro.jpg";
 import BygoneLandsCover from '../src/assets/images/comic-covers/bygonelands-cover.png';
 import FlourishingTwilightCover from '../src/assets/images/comic-covers/flourishingtwilight-cover.png';
 import Footer from '../src/components/global/Footer';
@@ -95,25 +96,53 @@ export default function Home() {
                 <div className={styles.container}>
                     <Header
                         bannerImage={bannerImg.src}
-                        title="DESIGN GALLERY"
+                        title="COSMIC DESIGN"
                     />
 
                     <div className={styles.section_1}>
                         <h2 className={styles.h2}>Welcome!</h2>
-                        <h3 className={styles.h3}>Feel free to check out my works!</h3>
+                        <h3 className={styles.h3}>Check out some of my proudest works!</h3>
 
 
                         <div className={styles.gallery_container}>
 
-                            {/* <Carousel>
-                            </Carousel> */}
+                            <Carousel>
+                            </Carousel>
 
                         </div>
 
                         <div className={styles.button_container}>
-                            <a className={styles.button} href="/design-directory">See More Projects</a>
+                            <a className={styles.button} href="/design-directory">MY PORTFOLIO GALLERY</a>
                         </div>
                     </div>
+
+                    <div className={styles.section_2}>
+                        <div className={styles.section_2_image}>
+                            <Image
+                                ref={(e) => setRef(imageRefs, e)}
+                                className={styles.img}
+                                src={ATanIntro.src}
+                                width={1300}
+                                height={1300}
+                                alt="Aaron Tan"
+                            />
+                        </div>
+                        <div className={styles.section_2_description}>
+                            <h3 className={styles.h2} ref={(e) => setRef(titleRefs, e)}>WOAH! Who's that Guy?</h3>
+                            <p className={styles.p} ref={(e) => setRef(paraRefs, e)}>
+                                Greetings! The name's Aaron Tan, and I'm an aspiring graphic designer and graphic novelist/illustrator
+                                who has a passion for crafting creative designs and illustrations with some carefully curated skills and techniques
+                                from art classes and independently learning on my spare time.
+                            </p>
+                            <p className={styles.p} ref={(e) => setRef(paraRefs, e)}>
+                                I am a part of the NIC GDES Program and will be graduating with an associates in Graphic and Web Design.
+                            </p>
+                            <div className={styles.button_container} ref={(e) => setRef(actionRefs, e)}>
+                                <a className={styles.button} href="/about">More About Me</a>
+                            </div>
+                        </div>
+                    </div>
+
                     <div className={styles.section_2_header}>
                         <h2 className={styles.h2}>My Comics</h2>
                     </div>

@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Header from '../src/components/global/Header';
 import bannerImg from '../src/assets/images/banner-images/comic-panel.jpg';
-import styles from '../styles/comics.module.css';
+import styles from '../styles/styles.module.css';
 import Image from 'next/image';
 import Link from "next/link";
 import BygoneLandsCover from '../src/assets/images/comic-covers/bygonelands-cover.png';
@@ -25,19 +25,19 @@ export default function Home() {
                     />
 
                     <div id="bygone-lands">
-                        <div className={styles.section_2}>
+                        <div className={styles.section_2_alt}>
                             <div className={styles.section_2_image}>
                                 <Image
                                     className={styles.img}
                                     src={BygoneLandsCover.src}
-                                    width={1300}
+                                    width={1500}
                                     height={2000}
                                     alt="Bygone Lands Cover"
                                 />
                             </div>
 
                             <div className={styles.section_2_description}>
-                                <h2 className={styles.h2}>Bygone Lands</h2>
+                                <h2 className={styles.comics_h2}>Bygone Lands</h2>
                                 <hr className={styles.hr} />
                                 <p className={styles.p}>
                                     Mark and Tracy attend the annual Sky Festival and meet up with their group of friends,
@@ -58,19 +58,19 @@ export default function Home() {
                         </div>
 
                         <div id="flourishing-twilight">
-                            <div className={styles.section_2_alt}>
+                            <div className={styles.section_2}>
                                 <div className={styles.section_2_image}>
                                     <Image
                                         className={styles.img}
                                         src={FlourishingTwilightCover.src}
-                                        width={1500}
+                                        width={1400}
                                         height={2200}
                                         alt="Flourishing Twilight Cover"
                                     />
                                 </div>
 
                                 <div className={styles.section_2_description}>
-                                    <h2 className={styles.h2}>Flourishing Twilight</h2>
+                                    <h2 className={styles.comics_h2}>Flourishing Twilight</h2>
                                     <hr className={styles.hr} />
                                     <p className={styles.p}>
                                         A couple of instructors take their days off at a lovely beach, until they discovered

@@ -32,26 +32,14 @@
     grid-row: span 2;
 }
 
-.wide {
-    grid-column: span 2;
-}
-
 .tall {
-    grid-row: span 2;
+    grid-column: span 2;
+    grid-row: span 3;
 }
 
-.customLightboxWrapper .yarl__container .yarl__slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .customLightboxWrapper .yarl__slide img {
-    display: block;
-    margin: auto;
-    max-width: 90vw;
-    max-height: 90vh;
-    object-fit: contain;
-  }
-  
+.skinny {
+    grid-column: span 2;
+    grid-row: span 4;
+}
+
+

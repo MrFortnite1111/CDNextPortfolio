@@ -7,7 +7,8 @@ import styles from "./gallery.module.css";
 
 type ImageItem = {
     src: string;
-    alt: string;
+    alt: string;        // For accessibility + image fallback
+    title: string;      // For lightbox caption only
     className?: string;
 };
 
@@ -47,9 +48,8 @@ const BentoGrid: React.FC<BentoGridProps> = ({ images }) => {
                     open={index >= 0}
                     index={index}
                     close={() => setIndex(-1)}
-                    slides={images.map(({ src, alt }) => ({ src, title: alt }))}
+                    slides={images.map(({ src, title }) => ({ src, title }))}
                     plugins={[Captions]}
-
                 />
             </div>
         </>

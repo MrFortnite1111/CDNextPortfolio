@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import ContactForm from "./ContactForm";
 import styles from '../../../styles/styles.module.css';
-import Greetings from "../../../src/assets/images/blog-images/intro.png";
+import Greetings from "../../../public/images/main/footer-image.png";
 import Instagram from '../../../src/assets/images/icons/Instagram_Icon.svg';
 import X from '../../../src/assets/images/icons/Twitter_Icon.svg';
 import Youtube from '../../../src/assets/images/icons/Youtube_Icon.svg';
