@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Montserrat';
-  src: url('/public/fonts/montserrat/Montserrat-Medium.ttf') format('ttf');
+  src: url('/fonts/montserrat/Montserrat-Medium.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -8,8 +8,8 @@
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('/public/fonts/montserrat/Montserrat-Bold.ttf') format('ttf');
-  font-weight: 700;
+  src: url('/fonts/montserrat/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
@@ -26,6 +26,7 @@
   width: 100%;
   overflow: hidden;
   font-family: var(--asap-font);
+  transition: background-color 0.5s ease;
 }
 
 .h1 {
@@ -194,7 +195,6 @@
 
 .logo img {
   width: 50%;
-  float: left;
   padding: 5px 5px 5px 10px;
 }
 
@@ -223,13 +223,14 @@
 }
 
 .menu__btn {
-  position: fixed;
-  top: 25px;
-  right: 20px;
+  position: relative;
   width: 26px;
   height: 26px;
   cursor: pointer;
   z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu__btn>span,
@@ -560,6 +561,75 @@ button.button:disabled {
   font-weight: 600;
 }
 
+.blogSliderWrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  transition: background-color 0.6s ease; /* Ensure smooth background color transition */
+}
+
+.blogSlider {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Add opacity transition */
+  opacity: 1;
+}
+
+.fadeToColor {
+  background-color: #241A47; /* Choose your desired transition color */
+  animation: fadeToColor 0.3s ease forwards;
+}
+
+@keyframes fadeToColor {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  animation: fadeOut 0.3s ease forwards;
+}
+
+.fadeIn {
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.slideRight {
+  animation: slideInLeft 0.3s ease forwards, fadeIn 0.3s ease forwards;
+}
+
+.slideLeft {
+  animation: slideInRight 0.3s ease forwards, fadeIn 0.3s ease forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    
+    transform: translateX(-100%);
+  }
+}
+
+.fadeToColor {
+  animation: fadeToColor 0.3s ease forwards;
+  background-color: #241A47;  /* Example color transition */
+}
+
 /* Bottom Navs for Galleries & Blog */
 
 .bottomnav {
@@ -662,6 +732,16 @@ button.button:disabled {
 .menu__item_active {
   display: flex;
 }
+
+.hamburgermenu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  margin-left: auto; /* 👈 this pushes it to the right */
+  padding-right: 20px; /* optional: gives a little spacing from edge */
+}
+
 
 .img {
   width: 300px;

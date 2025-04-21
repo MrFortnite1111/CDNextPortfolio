@@ -1,5 +1,6 @@
 "use client"
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import { useEffect } from "react";
 import styles from "../../../styles/styles.module.css"
 import Image from 'next/image';
 import Link from "next/link";
@@ -7,6 +8,7 @@ import Logo from '../../../public/images/icons/Logo.png';
 
 const NavBar = () => {
     const pathname = usePathname();
+    const router = useRouter();
 
     if (pathname === null) return null;
 
@@ -26,9 +28,15 @@ const NavBar = () => {
         return pathname === href || pathname.startsWith(href + "/") || pathname.startsWith(href + "?");
     };
 
+    // Close the mobile menu on route change
+    useEffect(() => {
+        const menuToggle = document.getElementById("menu-toggle") as HTMLInputElement;
+        if (menuToggle) {
+            menuToggle.checked = false;
+        }
+    }, [pathname]);
 
     return (
-
         <nav className={styles.nav}>
             <div className={styles.logo}>
                 <Link href="/">
@@ -45,7 +53,7 @@ const NavBar = () => {
             {/* Hamburger Menu */}
             <div className={styles.hamburgermenu}>
                 <input id="menu-toggle" className={styles.menu__toggle} type="checkbox" />
-                <label className={styles.menu__btn} htmlFor={"menu-toggle"}>
+                <label className={styles.menu__btn} htmlFor="menu-toggle">
                     <span></span>
                 </label>
 
@@ -99,9 +107,7 @@ const NavBar = () => {
                 ))}
             </ul>
         </nav>
-
     );
-
-}
+};
 
 export default NavBar
