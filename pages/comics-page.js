@@ -1,11 +1,11 @@
 import Head from 'next/head';
 import Header from '../src/components/global/Header';
-import bannerImg from '../src/assets/images/banner-images/comic-panel.jpg';
+import bannerImg from '../public/images/banners/festival.jpg';
 import styles from '../styles/styles.module.css';
 import Image from 'next/image';
 import Link from "next/link";
-import BygoneLandsCover from '../src/assets/images/comic-covers/bygonelands-cover.png';
-import FlourishingTwilightCover from '../src/assets/images/comic-covers/flourishingtwilight-cover.png';
+import BygoneLandsCover from '../public/images/comic-covers/bygonelands-cover.png';
+import FlourishingTwilightCover from '../public/images/comic-covers/flourishingtwilight-cover.png';
 import Footer from '../src/components/global/Footer';
 
 
@@ -83,8 +83,9 @@ export default function Home() {
                                         <a className={styles.button}
                                             target='blank'
                                             href="/flourishingtwilight.pdf"
-                                            locale={false}>Read
-                                            Now!</a>
+                                            locale={false}>
+                                                Read Now!
+                                        </a>
                                     </div>
                                 </div>
                             </div>

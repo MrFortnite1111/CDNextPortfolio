@@ -1,17 +1,18 @@
 import React from 'react';
 import Header from '../src/components/global/Header';
-import bannerImg from '../src/assets/images/banner-images/queens-gambit.jpg';
+import bannerImg from '../public/images/banners/graffiti-background.jpg';
 import Head from 'next/head';
 import styles from '../styles/styles.module.css';
 import Image from 'next/image';
-import Link from "next/link";
-import GraphicDesignThumbnail from '../src/assets/images/design-thumbnails/archibald_mockup.jpg';
-import DigitalArtThumbnail from '../src/assets/images/design-thumbnails/afternoon_drive.jpg';
+import GraphicDesignThumbnail from '../public/images/main/graphicdesign-thumbnail.jpg';
+import DigitalArtThumbnail from '../public/images/main/illustrations-thumbnail.jpg';
 import Footer from '../src/components/global/Footer';
-
+import { useRouter } from 'next/router';
 
 
 export default function Home() {
+    const router = useRouter();
+
     return (
         <div className={styles.container}>
             <Head>
@@ -46,7 +47,12 @@ export default function Home() {
                                 vector-based illustrations and create appealing Photoshop projects.
                             </p>
                             <div className={styles.button_container}>
-                                <a className={styles.button} href="/gallery-graphicdesign">Graphic Design Portfolio</a>
+                                <button
+                                    className={styles.button}
+                                    onClick={() => router.push('/gallery-graphicdesign')}
+                                >
+                                    Graphic Design Portfolio
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -71,7 +77,12 @@ export default function Home() {
                                 and meaningful art pieces that stand out with their own flare and style.
                             </p>
                             <div className={styles.button_container}>
-                                <a className={styles.button} href="/gallery-digitalart">Illustration Portfolio</a>
+                                <button
+                                    className={styles.button}
+                                    onClick={() => router.push('/gallery-digitalart')}
+                                >
+                                    Illustration Portfolio
+                                </button>
                             </div>
                         </div>
                     </div>

@@ -1,22 +1,24 @@
 import { useEffect, useRef } from 'react';
 import Head from 'next/head';
 import Header from '../src/components/global/Header';
-import bannerImg from '../src/assets/images/banner-images/void.jpg';
+import bannerImg from '../public/images/banners/void.jpg';
 import styles from '../styles/styles.module.css';
 import Image from 'next/image';
 import Carousel from "../src/assets/emblacarousel";
 import ATanIntro from "../public/images/about-me/aarontan-intro.jpg";
-import BygoneLandsCover from '../src/assets/images/comic-covers/bygonelands-cover.png';
-import FlourishingTwilightCover from '../src/assets/images/comic-covers/flourishingtwilight-cover.png';
+import BlogPromo from "../public/images/main/blog-promo.jpg";
+import BygoneLandsCover from '../public/images/comic-covers/bygonelands-cover.png';
+import FlourishingTwilightCover from '../public/images/comic-covers/flourishingtwilight-cover.png';
 import Footer from '../src/components/global/Footer';
 import { gsap } from "gsap";
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
-
+import { useRouter } from 'next/router';
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
+    const router = useRouter();
     const mainRef = useRef();
     const imageRefs = useRef([]);
     const titleRefs = useRef([]);
@@ -112,7 +114,9 @@ export default function Home() {
                         </div>
 
                         <div className={styles.button_container}>
-                            <a className={styles.button} href="/design-directory">MY PORTFOLIO GALLERY</a>
+                            <button className={styles.button} onClick={() => router.push('/design-directory')}>
+                                MY PORTFOLIO GALLERY
+                            </button>
                         </div>
                     </div>
 
@@ -138,8 +142,39 @@ export default function Home() {
                                 I am a part of the NIC GDES Program and will be graduating with an associates in Graphic and Web Design.
                             </p>
                             <div className={styles.button_container} ref={(e) => setRef(actionRefs, e)}>
-                                <a className={styles.button} href="/about">More About Me</a>
+                                <button className={styles.button} onClick={() => router.push('/about')}>
+                                    More About Me
+                                </button>
                             </div>
+                        </div>
+                    </div>
+
+                    <div className={styles.section_2}>
+                        <div className={styles.section_2_description}>
+                            <h3 className={styles.h2} ref={(e) => setRef(titleRefs, e)}>Blog Promo!</h3>
+                            <p className={styles.p} ref={(e) => setRef(paraRefs, e)}>
+                                While I'm trying to keep my social media posts on my platforms short and concise today, 
+                                my blog is a great way to learn more about my processes and decisions when designing my projects.
+                            </p>
+                            <p className={styles.p} ref={(e) => setRef(paraRefs, e)}>
+                                Sometimes, there will be other blog posts talking about just fun personal stuff or looking back on my art
+                                journey, but the Blog Page is a great way to learn about me as an artist and a graphic designer!
+                            </p>
+                            <div className={styles.button_container} ref={(e) => setRef(actionRefs, e)}>
+                                <button className={styles.button} onClick={() => router.push('/blog')}>
+                                    Check Out My Blog!
+                                </button>
+                            </div>
+                        </div>
+                        <div className={styles.section_2_image}>
+                            <Image
+                                ref={(e) => setRef(imageRefs, e)}
+                                className={styles.img}
+                                src={BlogPromo.src}
+                                width={1300}
+                                height={1300}
+                                alt="Promo Image for My Blog"
+                            />
                         </div>
                     </div>
 
@@ -172,7 +207,9 @@ export default function Home() {
                                 and secrets. Join them as they explore and uncover the mystery lurking in the archaic Bygone Lands!
                             </p>
                             <div className={styles.button_container} ref={(e) => setRef(actionRefs, e)}>
-                                <a className={styles.button} href="/comics-page#paper-adventures">More Info</a>
+                                <button className={styles.button} onClick={() => router.push('/comics-page#paper-adventures')}>
+                                    More Info
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -183,7 +220,7 @@ export default function Home() {
                                 ref={(e) => setRef(imageRefs, e)}
                                 className={styles.img}
                                 src={FlourishingTwilightCover.src}
-                                width={1500}
+                                width={1650}
                                 height={2200}
                                 alt="Flourishing Twilight Cover"
                             />
@@ -198,7 +235,9 @@ export default function Home() {
                                 Twilight Zone as they learn about the inhabitants and the environment!
                             </p>
                             <div className={styles.button_container} ref={(e) => setRef(actionRefs, e)}>
-                                <a className={styles.button} href="/comics-page#flourishing-twilight">More Info</a>
+                                <button className={styles.button} onClick={() => router.push('/comics-page#flourishing-twilight')}>
+                                    More Info
+                                </button>
                             </div>
                         </div>
                     </div>

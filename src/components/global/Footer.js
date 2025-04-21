@@ -3,9 +3,10 @@ import Image from 'next/image';
 import ContactForm from "./ContactForm";
 import styles from '../../../styles/styles.module.css';
 import Greetings from "../../../public/images/main/footer-image.png";
-import Instagram from '../../../src/assets/images/icons/Instagram_Icon.svg';
-import X from '../../../src/assets/images/icons/Twitter_Icon.svg';
-import Youtube from '../../../src/assets/images/icons/Youtube_Icon.svg';
+import Instagram from '../../../public/images/icons/Instagram_Icon.svg';
+import X from '../../../public/images/icons/Twitter_Icon.svg';
+import Youtube from '../../../public/images/icons/Youtube_Icon.svg';
+import Linkedin from '../../../public/images/icons/Linkedin_Icon.svg';
 
 const Footer = () => {
 
@@ -37,6 +38,10 @@ const Footer = () => {
                     />
                 </div>
 
+                <p className={styles.copyright_text}>
+                    Copyright 2025 Cosmic Design | All Rights Reserved | Use of my works to be trained off AI is strictly prohibited.
+                </p>
+
             </div>
             <ul className={styles.socialnav}>
                 <li>
@@ -66,6 +71,16 @@ const Footer = () => {
                             width={40}
                             height={40}
                             alt="Youtube"
+                        />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/aaron-tan-943b382b6" target="_blank">
+                        <Image
+                            src={Linkedin.src}
+                            width={38}
+                            height={38}
+                            alt="Linkedin"
                         />
                     </a>
                 </li>

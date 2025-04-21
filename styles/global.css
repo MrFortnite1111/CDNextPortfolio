@@ -5,6 +5,10 @@ body {
   font-family: var(--asap-font);
 }
 
+body {
+  background-color: #14111D;
+}
+
 a {
   color: inherit;
   text-decoration: none;

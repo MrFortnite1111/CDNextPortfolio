@@ -2,10 +2,11 @@
 import React from 'react';
 import styles from '../styles/styles.module.css';
 import Header from '../src/components/global/Header';
-import bannerImg from '../src/assets/images/banner-images/banner.jpg';
+import bannerImg from '../public/images/banners/yule-express.jpg';
 import GraphicDesignGallery from '../src/components/galleries/gallerygridlayout';
 import Head from 'next/head';
 import Footer from '../src/components/global/Footer';
+import { useRouter } from 'next/router';
 
 const images = [
     { src: "/images/graphicdesign/lawton-invitation.jpg", alt: "Lawton Invitation - Bubble Coral Aquarium", title: "Lawton Invitation - Bubble Coral Aquarium", className: "skinny" },
@@ -18,10 +19,11 @@ const images = [
     { src: "/images/graphicdesign/ultraseven-independentstudy-poster.jpg", alt: "Ultraseven Independent Study Poster", title: "Ultraseven Independent Study Poster", className: "skinny" },
     { src: "/images/graphicdesign/midnightchildren-illustrativeset.png", alt: "Midnight Children Illustrative Set", title: "Midnight Children Illustrative Set", className: "tall" },
     { src: "/images/graphicdesign/artnouveau-poster.png", alt: "Art Nouveau Poster", title: "Art Nouveau Poster", className: "skinny" },
-  ];
-  
+];
+
 
 export default function Page() {
+    const router = useRouter();
 
     return (
         <div className={styles.container}>
@@ -38,6 +40,15 @@ export default function Page() {
                     />
 
                     <GraphicDesignGallery images={images} />
+
+                    <div className={styles.bottomnav}>
+                        <button
+                            className={styles.button}
+                            onClick={() => router.push('/gallery-digitalart')}
+                        >
+                            Illustration Portfolio
+                        </button>
+                    </div>
 
                     <Footer />
                 </div>

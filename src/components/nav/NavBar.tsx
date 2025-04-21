@@ -3,26 +3,28 @@ import { usePathname } from "next/navigation";
 import styles from "../../../styles/styles.module.css"
 import Image from 'next/image';
 import Link from "next/link";
-import Logo from '../../../src/assets/images/icons/Logo.png';
+import Logo from '../../../public/images/icons/Logo.png';
 
 const NavBar = () => {
     const pathname = usePathname();
 
+    if (pathname === null) return null;
+
+
     const navItems = [
-        { label: "Home", href: "/" },
-        { label: "Blog", href: "/blog" },
-        { label: "Design", href: "/design-directory" },
-        { label: "Comics", href: "/comics-page" },
-        { label: "About", href: "/about" },
+        { label: "Home", href: "/", external: false },
+        { label: "Blog", href: "/blog", external: false },
+        { label: "Design", href: "/design-directory", external: false },
+        { label: "Comics", href: "/comics-page", external: false },
+        { label: "About", href: "/about", external: false },
     ];
 
-    const isActive = (href) => {
+    const isActive = (href: string): boolean => {
         if (href === "/") {
             return pathname === "/";
         }
         return pathname === href || pathname.startsWith(href + "/") || pathname.startsWith(href + "?");
     };
-
 
 
     return (

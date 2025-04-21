@@ -2,10 +2,11 @@
 import React from 'react';
 import styles from '../styles/styles.module.css';
 import Header from '../src/components/global/Header';
-import bannerImg from '../src/assets/images/banner-images/banner.jpg';
+import bannerImg from '../public/images/banners/overgrowth-forest.jpg';
 import IllustrationGallery from '../src/components/galleries/gallerygridlayout';
 import Head from 'next/head';
 import Footer from '../src/components/global/Footer';
+import { useRouter } from 'next/router';
 
 const images = [
     { src: "/images/illustrations/searedembers-poster.jpg", alt: "Seared Embers Poster - DnD", title: "Seared Embers Poster - DnD", className: "skinny" },
@@ -18,10 +19,11 @@ const images = [
     { src: "/images/illustrations/overgrowth-print.jpg", alt: "Overgrowth (2024)", title: "Overgrowth (2024)", className: "large" },
     { src: "/images/illustrations/electrifying-poster.jpg", alt: "Electrifying (2023)", title: "Electrifying (2023)", className: "skinny" },
     { src: "/images/illustrations/serenityinthousands.jpg", alt: "Serenity in Thousands (2023)", title: "Serenity in Thousands (2023)", className: "tall" },
-  ];
-  
+];
+
 
 export default function Page() {
+    const router = useRouter();
 
     return (
         <div className={styles.container}>
@@ -38,6 +40,15 @@ export default function Page() {
                     />
 
                     <IllustrationGallery images={images} />
+
+                    <div className={styles.bottomnav}>
+                        <button
+                            className={styles.button}
+                            onClick={() => router.push('/gallery-graphicdesign')}
+                        >
+                            Graphic Design Portfolio
+                        </button>
+                    </div>
 
                     <Footer />
                 </div>

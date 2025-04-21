@@ -1,5 +1,6 @@
 import '../styles/global.css';
 import { Montserrat, Asap } from 'next/font/google';
+import PageTransition from '../src/components/global/PageTransition';
 
 export const montserrat = Montserrat({
     subsets: ['latin'],
@@ -15,6 +16,8 @@ export const asap = Asap({
 export default function MyApp({ Component, pageProps }) {
 
     return (<main className={asap.variable}>
-        <Component {...pageProps} />
+        <PageTransition>
+            <Component {...pageProps} />
+        </PageTransition>
     </main>)
 }
