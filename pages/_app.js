@@ -18,19 +18,6 @@ export const asap = Asap({
 export default function MyApp({ Component, pageProps, router }) {
     return (
         <main className={asap.variable}>
-            <link rel="icon" href="/favicon.ico" sizes="any" />
-            <link
-                rel="icon"
-                href="/icon?<generated>"
-                type="image/<generated>"
-                sizes="<generated>"
-            />
-            <link
-                rel="apple-touch-icon"
-                href="/apple-icon?<generated>"
-                type="image/<generated>"
-                sizes="<generated>"
-            />
             <Layout>
                 <PageTransition routeKey={router.pathname}>
                     <Component {...pageProps} />
