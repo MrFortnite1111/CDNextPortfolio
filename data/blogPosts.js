@@ -1,48 +1,31 @@
 // Website Celebration woot woot!!
+import appleyeah from '../public/images/blog/appleline-yeah.png';
 import webrelease from '../public/images/blog/website-completion.jpg';
-
-// Import images for blog post 9
 import bygone1 from '../public/images/blog/bygone-lands-sketch.jpg';
 import bygone2 from '../public/images/blog/bygone-lands-cover.jpg';
 import bygone3 from '../public/images/blog/bygone-lands-annoucement.jpg';
-
-// Import images for blog post 8
 import vanilla1 from '../public/images/blog/vanilla-todo.jpg';
 import vanilla2 from '../public/images/blog/vanilla-code.jpg';
 import react1 from '../public/images/blog/reactjs-todo.jpg';
 import react2 from '../public/images/blog/reactjs-code.jpg';
-
-// Import images for blog post 7
-
 import puqween1 from '../public/images/blog/puqween-1.jpg';
 import puqween2 from '../public/images/blog/puqween-2.jpg';
 import puqween3 from '../public/images/blog/puqween-3.jpg';
-
-// Import images for blog post 6
-
 import meatball from '../public/images/blog/meatball.jpg';
-
-// Import images for blog post 5
-
 import divinepower from '../public/images/blog/divine-power.jpg';
-
-// Import images for blog post 4
-
 import divinepowersketch from '../public/images/blog/progress-divinepower.jpg';
-
-// Import images for blog post 3
-
 import bewitched from '../public/images/blog/bewitched.jpg';
-
-// Import images for blog post 2
-
 import bewitchedsketch from '../public/images/blog/progress-witch.jpg';
-
-// Import images for blog post 1
-
 import intro from '../public/images/blog/intro.jpg';
 
 const blogPosts = [
+  {
+    id: 11,
+    title: "Welcome back!",
+    date: "2025-04-22",
+    content: `Wow, the real release of my website. Complete with a domain and just how I like it, that's gotta be somethin' lol. Anyways, feel free to take a look around my portfolio website and see what I got in store! I was supposed to write up an example of what a normal design highlight blog post would look like nowadays, but the college life is still kicking me down right now. So, have this motivational thumbs up from our sweet and dear Appleline! She's always there to lend a hand :D`,
+    images: [ appleyeah ]
+  },
   {
     id: 10,
     title: "Cosmic Design Portfolio Site: Complete!",
