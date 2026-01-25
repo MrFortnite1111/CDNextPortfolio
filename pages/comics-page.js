@@ -47,7 +47,7 @@ export default function Home() {
                                 <div className={styles.button_container}>
                                     <a className={styles.button_alt_active}
                                         target='blank'
-                                        href="/bygonelands-chapter1demo.pdf">Preview</a>
+                                        href="/bygonelands-chapter1demo-updated.pdf">Preview</a>
                                 </div>
                                 <hr className={styles.hr} />
                                 <h3 className={styles.h3}>Full Comic Coming Soon!</h3>
