@@ -6,6 +6,7 @@ import styles from '../styles/styles.module.css';
 import Image from 'next/image';
 import GraphicDesignThumbnail from '../public/images/main/graphicdesign-thumbnail.jpg';
 import DigitalArtThumbnail from '../public/images/main/illustrations-thumbnail.jpg';
+import ThumbnailDesignThumbnail from '../public/images/main/thumbnaildesign-thumbnail.jpg';
 import Footer from '../src/components/global/Footer';
 import { useRouter } from 'next/router';
 
@@ -27,6 +28,36 @@ export default function Home() {
                         title="DESIGN GALLERIES"
                     />
 
+                    <div className={styles.section_2_alt}>
+                        <div className={styles.section_2_image}>
+                            <Image
+                                className={styles.img}
+                                src={ThumbnailDesignThumbnail.src}
+                                width={1800}
+                                height={2500}
+                                alt="An image showcasing three Youtube Thumbnails."
+                            />
+                        </div>
+                        <div className={styles.section_2_description}>
+                            <h3 className={styles.h3}>Thumbnail Designs</h3>
+                            <hr className={styles.hr} />
+                            <p className={styles.p}>
+                                In recent times, I have done some freelance thumbnail design work for a small streamer, Nyxus Vivyd.
+                                Throughout the progress of my work, I have become more flexible in this line of work and a great understanding
+                                of how to make eye-catching thumbnails along with my SEO knowledge from completing a course in Social Media Content
+                                Creation.
+                            </p>
+                            <div className={styles.button_container}>
+                                <button
+                                    className={styles.button}
+                                    onClick={() => router.push('/gallery-thumbnails')}
+                                >
+                                    Thumbnail Design Portfolio
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
                     <div className={styles.section_2}>
                         <div className={styles.section_2_image}>
                             <Image
@@ -34,7 +65,7 @@ export default function Home() {
                                 src={GraphicDesignThumbnail.src}
                                 width={1800}
                                 height={2500}
-                                alt="Archibald Mockup"
+                                alt="An image showcasing two posters and a postcard."
                             />
                         </div>
                         <div className={styles.section_2_description}>
@@ -64,7 +95,7 @@ export default function Home() {
                                 src={DigitalArtThumbnail.src}
                                 width={1800}
                                 height={2500}
-                                alt="Afternoon Drive (2024)"
+                                alt="An image showcasing three different illustrations."
                             />
                         </div>
                         <div className={styles.section_2_description}>
