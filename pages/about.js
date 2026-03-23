@@ -69,7 +69,7 @@ export default function Home() {
                             taking long bike rides to the community-driven downtown of Coeur d'Alene, and spending countless hours on his Stardew Valley save file.
                             </p>
                             <div className={styles.button_container}>
-                                <a className={styles.button} href="/aarontans-resume-2025.pdf" target='_blank' >My Resume</a>
+                                <a className={styles.button} href="/aarontan-resume-2026.pdf" target='_blank' >My Resume</a>
                             </div>
                         </div>
                     </div>
