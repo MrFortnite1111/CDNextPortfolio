@@ -53,20 +53,20 @@ export default function Home() {
                             <hr className={styles.hr} />
                             <p className={styles.p}>
                                 Growing up in Kuala Lumpur, Malaysia, and developing his passion for creative designs
-                                by reading fun little comics, Aaron Tan is a soul-driven and enthusiastic designer settled
-                                in Coeur d'Alene, Idaho. He specializes in graphic/web design, user experience, character
+                                by reading fun little comics, Aaron Tan is a soul-driven and enthusiastic designer currently settled
+                                in Pflugerville, Texas. He specializes in graphic/web design, user experience, character
                                 designs and illustrations, and creative writing. His eye for intricate details and careful
                                 planning help his designs stand out as bold and meaningful visions of art.
                             </p>
                             <p className={styles.p}>
-                                Aaron Tan is finishing up his Associates in Graphic and Web Design at North Idaho College and 
+                                Aaron Tan graduated in Spring 2025 with his Associates in Graphic and Web Design at North Idaho College and 
                                 has developed his skills in collaboration, team leadership, and taking initiative on open opportunities. 
                                 He continues to boost his creative mindset and is eager to set out into the world and use his newly 
                                 equipped skill set to help others achieve their creative visions and the need for stand-out designs among competitors.
                             </p>
                             <p className={styles.p}>
                             When Aaron has some spare time, he usually winds down with writing down fun little stories for his carefully crafted characters, 
-                            taking long bike rides to the community-driven downtown of Coeur d'Alene, and spending countless hours on his Stardew Valley save file.
+                            engaging himself with local community events in art spaces, and spending countless hours on his Stardew Valley save file.
                             </p>
                             <div className={styles.button_container}>
                                 <a className={styles.button} href="/aarontan-resume-2026.pdf" target='_blank' >My Resume</a>

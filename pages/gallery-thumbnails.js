@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Header from '../src/components/global/Header';
 import bannerImg from '../public/images/banners/junyx.jpg';
 import GraphicDesignGallery from '../src/components/galleries/gallerygridlayout';
-import DesignSketch1 from '../public/images/yt-thumbnails/junyx-resource-concepts.jpg';
+import DesignSketch1 from '../public/images/yt-thumbnails/junyx-offcamgrind-concepts.jpg';
 import InfinitumExample from '../public/images/yt-thumbnails/polaris1.jpg';
 import JuNyxBanner from '../public/images/yt-thumbnails/junyx-banner.jpg';
 import Head from 'next/head';
@@ -19,12 +19,16 @@ const images = [
     { src: "/images/yt-thumbnails/junyx-resource-1.jpg", alt: "JuNyx, Resource Gathering Design 1", title: "WHY DID THEY ADD MOSQUITOES?!", className: "large" },
     { src: "/images/yt-thumbnails/junyx-resource-2.jpg", alt: "JuNyx, Resource Gathering Design 2", title: "We Hated Gathering Resources...", className: "large" },
     { src: "/images/yt-thumbnails/junyx-resource-3.jpg", alt: "JuNyx, Resource Gathering Design 3", title: "The Nether (Beyond Depths) Ruined Us", className: "large" },
+    { src: "/images/yt-thumbnails/junyx-offcamgrind-1.jpg", alt: "JuNyx, Offcam Grind Design 1", title: "Who up pondering they orb?", className: "large" },
     { src: "/images/yt-thumbnails/junyx-finale-concepts.jpg", alt: "JuNyx, Early Game Finale Concepts", title: "JuNyx, Early Game Finale Concepts", className: "large" },
+    { src: "/images/yt-thumbnails/junyx-resource-concepts.jpg", alt: "JuNyx, Resource Streams Concepts", title: "JuNyx, Resource Streams Concepts", className: "large" },
+    { src: "/images/yt-thumbnails/junyx-offcamgrind-concepts.jpg", alt: "JuNyx, Offcam Grind Concepts", title: "JuNyx, Offcam Grind Concepts", className: "large" },
     { src: "/images/yt-thumbnails/nyxus-blocktales.jpg", alt: "Nyxus Vivyd, Blocktales Into the Pit", title: "Into the Pit! Solo Block Tales Pit Run", className: "large" },
     { src: "/images/yt-thumbnails/golf.jpg", alt: "Have You Ever Golfed With Your Life on the Line?", title: "Golf Wars", className: "large" },
     { src: "/images/yt-thumbnails/polaris1.jpg", alt: "INFINITUM: Polaris - 'Operation Ticket Snatchers' (Part 2)", title: "INFINITUM: Polaris - 'Operation Ticket Snatchers' (Part 2)", className: "large" },
     { src: "/images/yt-thumbnails/polaris2.jpg", alt: "INFINITUM: Polaris, Act II - 'WONDERLAND' (Part 7)", title: "INFINITUM: Polaris, Act II - 'WONDERLAND' (Part 7)", className: "large" },
     { src: "/images/yt-thumbnails/polaris3.jpg", alt: "INFINITUM: Polaris, Act II - 'A Hysterical End' (Part 8)", title: "INFINITUM: Polaris, Act II - 'A Hysterical End' (Part 8)", className: "large" },
+    { src: "/images/yt-thumbnails/polaris11.jpg", alt: "INFINITUM: Polaris, Act II - 'Elegy of M'yirgdrar' (Part 11)", title: "INFINITUM: Polaris, Act II - 'Elegy of M'yirgdrar' (Part 11)", className: "large" },
 ];
 
 
@@ -50,11 +54,15 @@ export default function Page() {
                             <h3 className={styles.h2}>My Process</h3>
                             <p className={styles.p}>
                                 Usually, I come up with three thumbnail designs for a stream or a video that appeals and engages viewers, new and old!
+                                A lot of my experience comes from being enrolled on an online social media and SEO program called Stukent's Simternship,
+                                and I developed my skills in creating and planning social media content and optimizing the best results for SEO.
+                            </p>
+                            <p className={styles.p}>
                                 With Youtube's A/B testing, I strive to create different designs that are strong and summarize the video well, along with 
                                 title proposals that check off all SEO boxes and is approved by the client beforehand.
                             </p>
                             <p className={styles.p}>
-                                The programs I use for my thumbnail designs include Procreate, for my artwork, and Affinity/Photoshop for the final effects 
+                                The programs I use for my thumbnail designs include Procreate, for my artwork, and Affinity/Photoshop  for the final effects 
                                 and edits to make everything look clean and attention-grabbing!
                             </p>
                         </div>
@@ -64,7 +72,7 @@ export default function Page() {
                                 src={DesignSketch1.src}
                                 width={1280}
                                 height={720}
-                                alt="Sketch Concepts for a JuNyx Resource Stream"
+                                alt="Sketch Concepts for a JuNyx Offcam Grind Stream"
                             />
                         </div>
                     </div>

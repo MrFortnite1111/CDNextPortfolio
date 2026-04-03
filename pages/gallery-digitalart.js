@@ -50,6 +50,15 @@ export default function Page() {
                         </button>
                     </div>
 
+                    <div className={styles.bottomnav}>
+                        <button
+                            className={styles.button}
+                            onClick={() => router.push('/gallery-thumbnails')}
+                        >
+                            Thumbnail Design Portfolio
+                        </button>
+                    </div>
+
                     <Footer />
                 </div>
             </main>

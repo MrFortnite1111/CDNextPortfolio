@@ -5,7 +5,6 @@ import styles from '../../../styles/styles.module.css';
 import Greetings from "../../../public/images/main/footer-image.png";
 import Instagram from '../../../public/images/icons/Instagram_Icon.svg';
 import X from '../../../public/images/icons/Twitter_Icon.svg';
-import Youtube from '../../../public/images/icons/Youtube_Icon.svg';
 import Linkedin from '../../../public/images/icons/Linkedin_Icon.svg';
 
 const Footer = () => {
@@ -39,13 +38,13 @@ const Footer = () => {
                 </div>
 
                 <p className={styles.copyright_text}>
-                    Copyright 2025 Cosmic Design | All Rights Reserved | Use of my works to be trained off AI is strictly prohibited.
+                    Copyright 2026 Cosmic Design | All Rights Reserved | Use of my works to be trained off AI is strictly prohibited.
                 </p>
 
             </div>
             <ul className={styles.socialnav}>
                 <li>
-                    <a href="https://www.instagram.com/starro_art_/" target="_blank">
+                    <a href="https://www.instagram.com/starrmallow/" target="_blank">
                         <Image
                             src={Instagram.src}
                             width={40}
@@ -55,22 +54,12 @@ const Footer = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/starro_art_" target="_blank">
+                    <a href="https://twitter.com/starrmallow" target="_blank">
                         <Image
                             src={X.src}
                             width={40}
                             height={40}
                             alt="Twitter - X"
-                        />
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/@nerdneckdoez209" target="_blank">
-                        <Image
-                            src={Youtube.src}
-                            width={40}
-                            height={40}
-                            alt="Youtube"
                         />
                     </a>
                 </li>

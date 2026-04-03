@@ -139,7 +139,7 @@ export default function Home() {
                                 from art classes and independently learning on my spare time.
                             </p>
                             <p className={styles.p} ref={(e) => setRef(paraRefs, e)}>
-                                I am a part of the NIC GDES Program and will be graduating with an associates in Graphic and Web Design.
+                                I was a part of the NIC GDES Program from 2023 to 2025 and have graduated with an associates in Graphic and Web Design in Spring 2025.
                             </p>
                             <div className={styles.button_container} ref={(e) => setRef(actionRefs, e)}>
                                 <button className={styles.button} onClick={() => router.push('/about')}>
