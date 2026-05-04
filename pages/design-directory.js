@@ -28,36 +28,6 @@ export default function Home() {
                         title="DESIGN GALLERIES"
                     />
 
-                    <div className={styles.section_2_alt}>
-                        <div className={styles.section_2_image}>
-                            <Image
-                                className={styles.img}
-                                src={ThumbnailDesignThumbnail.src}
-                                width={1800}
-                                height={2500}
-                                alt="An image showcasing three Youtube Thumbnails."
-                            />
-                        </div>
-                        <div className={styles.section_2_description}>
-                            <h3 className={styles.h3}>Thumbnail Designs</h3>
-                            <hr className={styles.hr} />
-                            <p className={styles.p}>
-                                In recent times, I have done some freelance thumbnail design work for a small streamer, Nyxus Vivyd.
-                                Throughout the progress of my work, I have become more flexible in this line of work and a great understanding
-                                of how to make eye-catching thumbnails along with my SEO knowledge from completing a course in Social Media Content
-                                Creation.
-                            </p>
-                            <div className={styles.button_container}>
-                                <button
-                                    className={styles.button}
-                                    onClick={() => router.push('/gallery-thumbnails')}
-                                >
-                                    Thumbnail Design Portfolio
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
                     <div className={styles.section_2}>
                         <div className={styles.section_2_image}>
                             <Image
@@ -113,6 +83,36 @@ export default function Home() {
                                     onClick={() => router.push('/gallery-digitalart')}
                                 >
                                     Illustration Portfolio
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={styles.section_2_alt}>
+                        <div className={styles.section_2_image}>
+                            <Image
+                                className={styles.img}
+                                src={ThumbnailDesignThumbnail.src}
+                                width={1800}
+                                height={2500}
+                                alt="An image showcasing three Youtube Thumbnails."
+                            />
+                        </div>
+                        <div className={styles.section_2_description}>
+                            <h3 className={styles.h3}>Thumbnail Designs</h3>
+                            <hr className={styles.hr} />
+                            <p className={styles.p}>
+                                In recent times, I have done some freelance thumbnail design work for a small streamer, Nyxus Vivyd.
+                                Throughout the progress of my work, I have become more flexible in this line of work and a great understanding
+                                of how to make eye-catching thumbnails along with my SEO knowledge from completing a course in Social Media Content
+                                Creation.
+                            </p>
+                            <div className={styles.button_container}>
+                                <button
+                                    className={styles.button}
+                                    onClick={() => router.push('/gallery-thumbnails')}
+                                >
+                                    Thumbnail Design Portfolio
                                 </button>
                             </div>
                         </div>
